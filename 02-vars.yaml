@@ -20,6 +20,9 @@
     - name: Printing the CLI URL  
       ansible.builtin.debug:
             msg: "{{ CLI_URL }}" 
+      vars: 
+         CLI_URL: 
+
 
 
 # If you just use the variable in the msg :, ensure you quote them.
