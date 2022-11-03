@@ -1,1 +1,3 @@
 - name: Demo on using vairables 
+  hosts: all 
+  vars:
