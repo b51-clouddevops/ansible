@@ -1,4 +1,3 @@
---- 
 - name: Demo on using vairables 
   hosts: all 
   vars:                            # Play-level variables 
@@ -25,6 +24,7 @@
          msg: "{{ CLI_URL }}" 
       vars: 
          CLI_URL: task-cli.google.com 
+
 
 
 # If you just use the variable in the msg :, ensure you quote them.
