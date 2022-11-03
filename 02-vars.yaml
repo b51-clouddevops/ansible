@@ -10,3 +10,7 @@
     - name: Printing the URL with space 
       ansible.builtin.debug:
             msg: Value of URL is {{ URL }}
+
+    - name: Printing the URL with space 
+      ansible.builtin.debug:
+            msg: Value of URL is {{ URL }}
