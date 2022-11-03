@@ -1,7 +1,7 @@
 - name: Demo on using vairables 
   hosts: all 
-  vars:
-    URL: play.google.com
+  vars:                            # Play-level variables 
+    URL: play.google.com           
   tasks: 
     - name: Printing the URL 
       ansible.builtin.debug:
