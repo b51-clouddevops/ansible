@@ -15,3 +15,7 @@
     - name: Print Hello from task2 of play1 
       ansible.builtin.debug:
             msg: Hai from dev task1 of play2
+
+NAME  
+swamy 
+Mohit 
