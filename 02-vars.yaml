@@ -26,3 +26,5 @@
 # If you declare something at play-level, all the tasks of this play can use this variable
 
 # In Ansible, if any of the variable is used without declaring it, it will throw you an exception.
+
+## Variable Priority :  Local Variable > Global 
