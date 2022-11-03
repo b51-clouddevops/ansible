@@ -11,6 +11,6 @@
       ansible.builtin.debug:
             msg: Value of URL is {{ URL }}
 
-    - name: Printing the URL with space 
+    - name: Printing the URL with quotes 
       ansible.builtin.debug:
-            msg: Value of URL is {{ URL }}
+            msg: {{ URL }}
