@@ -13,4 +13,7 @@
 
     - name: Printing the URL with quotes 
       ansible.builtin.debug:
-            msg: {{ URL }}
+            msg: {{ URL }} 
+
+
+# If you just use the variable in the msg :
