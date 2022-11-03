@@ -1,4 +1,6 @@
 - name: Demo on using vairables 
   hosts: all 
   vars:
-    URL:
+    URL: play.google.com
+  tasks: 
+    - name: 
