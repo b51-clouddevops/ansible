@@ -25,4 +25,4 @@
 # If you just use the variable in the msg :, ensure you quote them.
 # If you declare something at play-level, all the tasks of this play can use this variable
 
-#
+# In Ansible, if any of the variable is used without declaring it
