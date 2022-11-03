@@ -17,6 +17,11 @@
       vars:                            # task-level / local variables 
         URL: task.google.com    
 
+    - name: Printing the CLI URL  
+      ansible.builtin.debug:
+            msg: "{{ URL }}" 
+      vars:                            # task-level / local variables 
+        URL: task.google.com    
 
 
 
