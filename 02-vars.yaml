@@ -30,4 +30,4 @@
 
 # In Ansible, if any of the variable is used without declaring it, it will throw you an exception.
 
-## Variable Priority :  Command Line Variables > Local Variable > Global 
+## Variable Priority :  Command Line Variables > Local Variable > Global  Vairbales 
