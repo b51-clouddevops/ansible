@@ -1,5 +1,7 @@
 - name: Demo on facts 
   hosts: all 
   tasks:
-    - name: Print hai 
+    - name: Print OS Distro 
+      debug: 
+        msg:  
      
