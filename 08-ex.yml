@@ -1,9 +1,9 @@
 - name: Ansible task selection 
   hosts: all 
   tasks: 
-    - name: Performing werbserver installation 
+    - name: Performing webserver installation 
       ansible.builtin.debug:
-            msg: Hai from task1 of play1 
+            msg: Webservre installation completed 
             
 # app-server 
 # web-server
