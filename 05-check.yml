@@ -7,4 +7,4 @@
 
     - name: Starting tomcat 
       ansible.builtin.debug: 
-        msg: Tomcat is starting 
+        msg: Start tomcat
