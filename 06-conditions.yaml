@@ -2,7 +2,6 @@
   hosts: all  
   vars:   
     action: false 
-    food
   tasks: 
     - name: Run this when os is centos 
       ansible.builtin.debug: 
