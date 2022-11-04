@@ -10,5 +10,5 @@
         msg: "{{OUT.stdout}}"
 
 
-        a =10 
-        cat
+        a = 10 
+        uptime > a.txt 
