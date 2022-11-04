@@ -14,4 +14,4 @@
 
     - name: Fail if "bar" is undefined
       ansible.builtin.fail: msg="Bailing out. This play requires 'bar'"
-      when: bar is undefined # This will be passsed as I've not delcared the variable bar 
+      when: bar is defined # This will be passsed as I've not delcared the variable bar 
