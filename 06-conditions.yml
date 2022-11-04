@@ -6,7 +6,7 @@
         msg: Hello To CentOS 
       when: ansible_distribution == "CentOS"
     
-    - name: Print CentOS Distro 
+    - name: Print Ubuntu Distro 
       ansible.builtin.debug:
         msg: Hello To Ubuntu 
       when: ansible_distribution == "Ubuntu"
