@@ -1,7 +1,7 @@
 - name: Ansible task selection 
   hosts: all 
   tasks: 
-    - name: Print Hello from task1 of play1 
+    - name: Performing werbserver installation 
       ansible.builtin.debug:
             msg: Hai from task1 of play1 
             
