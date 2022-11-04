@@ -1,7 +1,7 @@
 - name: Demo on conditions 
   hosts: all  
   vars:   
-    bar: false 
+    bar: thebestbasr 
   tasks: 
     - name: Run this when os is centos 
       ansible.builtin.debug: 
