@@ -1,4 +1,4 @@
-- name: Demo on facts 
+- name: Demo on conditions 
   hosts: all 
   tasks:
     - name: Print OS Distro 
