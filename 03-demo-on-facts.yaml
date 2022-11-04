@@ -5,7 +5,9 @@
       debug: 
         msg: OS Distro is {{ansible_distribution}}  
     
-    - name: Mac Address is
+    - name: Printing Mac Address 
+      debug:
+        msg: Mac Address is 
 
 
 "ansible_default_ipv4": {
