@@ -4,6 +4,10 @@
     - name: Performing webserver installation 
       ansible.builtin.debug:
             msg: Webservre installation completed 
+
+    - name: Starting webserver  
+      ansible.builtin.debug:
+            msg: Webservre installation completed 
             
 # app-server 
 # web-server
