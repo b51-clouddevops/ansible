@@ -13,7 +13,9 @@
     - name: Running a shell commands as centos user 
       ansible.builtin.shell: id
       register: OUT
+      become_user: centos 
 
     - name: Printing the out variable as centos user 
       ansible.builtin.debug: 
         msg: "{{OUT.stdout}}"
+      become_user: centos 
