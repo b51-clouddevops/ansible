@@ -21,9 +21,9 @@
       ansible.builtin.debug:
             msg: db installation completed 
 
-    - name: Starting webserver  
+    - name: Starting dbserver  
       ansible.builtin.debug:
-            msg: Webserver started 
+            msg: DB Server started 
             
 # app-server 
 # web-server
