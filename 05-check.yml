@@ -1,4 +1,4 @@
-- name: Demo on using shell module 
+- name: Check tomcat is runnig or not
   hosts: all 
   tasks: 
     - name: Running a shell commands 
