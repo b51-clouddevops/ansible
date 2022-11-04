@@ -5,4 +5,5 @@
       ansible.builtin.shell: uptime
       register: OUT
 
-    - name: 
+    - name: Printing the out variable 
+      
