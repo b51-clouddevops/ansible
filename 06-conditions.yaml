@@ -10,8 +10,8 @@
 
     - name: Run the command if "foo" is defined
       ansible.builtin.shell: echo "I've got '{{ foo }}' and am not afraid to use it!"
-      when: foo is defined
+      when: foo is defined  # This will be failed as I've not delcared the variable foo 
 
     - name: Fail if "bar" is undefined
       ansible.builtin.fail: msg="Bailing out. This play requires 'bar'"
-      when: bar is undefined
+      when: bar is undefined # This will be passsed as I've not delcared the variable foo 
