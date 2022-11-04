@@ -4,7 +4,4 @@
     - name: Copy file to destination 
       ansible.builtin.copy:
         src: inv 
-        dest: /etc/foo.conf
-        owner: foo
-        group: foo
-        mode: '0644'
+        dest: /home/centos/hosts
