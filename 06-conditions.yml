@@ -4,7 +4,7 @@
     - name: Print OS Distro 
       ansible.builtin.debug: 
         msg: Hello To CentOS 
-      when: {{ansible_distribution}}  
+      when: ansible_distribution  
     
     - name: Printing Mac Address 
       ansible.builtin.debug:
