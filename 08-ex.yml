@@ -15,11 +15,11 @@
 
     - name: Starting appserver  
       ansible.builtin.debug:
-            msg: Webserver started 
+            msg: appserver started 
 
-    - name: Performing webserver installation 
+    - name: Performing dbserver installation 
       ansible.builtin.debug:
-            msg: Webservre installation completed 
+            msg: db installation completed 
 
     - name: Starting webserver  
       ansible.builtin.debug:
