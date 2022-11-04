@@ -1,4 +1,4 @@
-- name: Ansible task selection 
+- name: Ansible tags
   hosts: all 
   tasks: 
     - name: Performing webserver installation 
