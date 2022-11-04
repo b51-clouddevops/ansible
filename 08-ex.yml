@@ -8,6 +8,22 @@
     - name: Starting webserver  
       ansible.builtin.debug:
             msg: Webserver started 
+
+    - name: Performing appserver installation 
+      ansible.builtin.debug:
+            msg: Webservre installation completed 
+
+    - name: Starting webserver  
+      ansible.builtin.debug:
+            msg: Webserver started 
+
+    - name: Performing webserver installation 
+      ansible.builtin.debug:
+            msg: Webservre installation completed 
+
+    - name: Starting webserver  
+      ansible.builtin.debug:
+            msg: Webserver started 
             
 # app-server 
 # web-server
