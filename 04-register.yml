@@ -2,4 +2,4 @@
   hosts: all 
   tasks: 
     - name: Running a shell commands 
-      ansible.builtin.shell: somescript.sh >> somelog.txt
+      ansible.builtin.shell: uptime
