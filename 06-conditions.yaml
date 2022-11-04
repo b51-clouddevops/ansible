@@ -2,4 +2,5 @@
   hosts: all  
   vars:   
     action: true 
-  tasks:
+  tasks: 
+    - name: Run this when os is centos 
