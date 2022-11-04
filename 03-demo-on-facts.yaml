@@ -3,7 +3,9 @@
   tasks:
     - name: Print OS Distro 
       debug: 
-        msg: OS Distro is {{ansible_distribution}} 
+        msg: OS Distro is {{ansible_distribution}}  
+    
+    - name: Mac Address is
 
 
 "ansible_default_ipv4": {
