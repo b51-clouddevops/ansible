@@ -1,4 +1,4 @@
-- name: Demo on using shell module 
+- name: Demo on privilege escalation
   hosts: all 
   tasks: 
     - name: Running a shell commands 
