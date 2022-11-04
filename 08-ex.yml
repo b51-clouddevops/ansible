@@ -29,6 +29,7 @@
     - name: Starting dbserver  
       ansible.builtin.debug:
             msg: DB Server started 
+      tags: db 
             
 # app-server 
 # web-server
