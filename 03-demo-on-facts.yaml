@@ -3,5 +3,5 @@
   tasks:
     - name: Print OS Distro 
       debug: 
-        msg:  
+        msg: OS Distro is {{ansible_distribution}} 
      
