@@ -1,3 +1,5 @@
 - name: Demo on using shell module 
   hosts: all 
-  tasks:
+  tasks: 
+    - name: Running a shell commands 
+      
