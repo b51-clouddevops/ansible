@@ -7,7 +7,7 @@
 
     - name: Starting webserver  
       ansible.builtin.debug:
-            msg: Webservre installation completed 
+            msg: Webserver started 
             
 # app-server 
 # web-server
