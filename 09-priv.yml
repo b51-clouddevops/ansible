@@ -10,10 +10,10 @@
       ansible.builtin.debug: 
         msg: "{{OUT.stdout}}" 
 
-    - name: Running a shell commands 
+    - name: Running a shell commands as centos user 
       ansible.builtin.shell: id
       register: OUT
 
-    - name: Printing the out variable 
+    - name: Printing the out variable as centos user 
       ansible.builtin.debug: 
         msg: "{{OUT.stdout}}"
