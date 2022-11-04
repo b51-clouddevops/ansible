@@ -7,7 +7,7 @@
     
     - name: Printing Mac Address 
       debug:
-        msg: Mac Address is 
+        msg: Mac Address is {{ansible_default_ipv4.macaddress}}
 
 
 "ansible_default_ipv4": {
