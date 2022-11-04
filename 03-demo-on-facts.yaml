@@ -1,2 +1,5 @@
 - name: Demo on facts 
-  
+  hosts: all 
+  tasks:
+    - name: Print hai 
+     
