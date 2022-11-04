@@ -1,11 +1,11 @@
 - name: Demo on conditions 
   hosts: all 
   tasks:
-    - name: Print OS Distro 
+    - name: Print CentOS Distro 
       ansible.builtin.debug: 
         msg: Hello To CentOS 
       when: ansible_distribution == "CentOS"
     
-    - name: Printing Mac Address 
+    - name:  Print CentOS Distro 
       ansible.builtin.debug:
         msg: Mac Address is {{ansible_default_ipv4.macaddress}}
