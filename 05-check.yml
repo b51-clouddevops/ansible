@@ -5,6 +5,6 @@
       ansible.builtin.shell: ps -ef | grep java | grep -v grep
       register: OUT
 
-    - name: Starting the out variable 
+    - name: Starting tomcat 
       ansible.builtin.debug: 
-        msg: "{{OUT.stdout}}"
+        msg:  
