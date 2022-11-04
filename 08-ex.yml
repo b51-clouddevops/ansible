@@ -1,1 +1,9 @@
 - name: Ansible task selection 
+  hosts: all 
+  tasks: 
+
+
+
+app-server 
+web-server
+db-server
