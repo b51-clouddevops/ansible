@@ -1,1 +1,3 @@
-- name: Demo on using shell module
+- name: Demo on using shell module 
+  hosts: all 
+  tasks:
