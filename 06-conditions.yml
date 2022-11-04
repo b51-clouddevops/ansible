@@ -6,6 +6,7 @@
         msg: Hello To CentOS 
       when: ansible_distribution == "CentOS"
     
-    - name:  Print CentOS Distro 
+    - name: Print CentOS Distro 
       ansible.builtin.debug:
-        msg: Mac Address is {{ansible_default_ipv4.macaddress}}
+        msg: Hello To Ubuntu 
+      when: ansible_distribution == "CentOS"
