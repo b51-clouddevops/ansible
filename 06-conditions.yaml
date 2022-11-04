@@ -1,1 +1,3 @@
-- name: Demo on con
+- name: Demo on conditions 
+  hosts: all  
+  vars: 
