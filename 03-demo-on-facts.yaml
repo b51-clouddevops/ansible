@@ -4,4 +4,21 @@
     - name: Print OS Distro 
       debug: 
         msg: OS Distro is {{ansible_distribution}} 
+
+
+"ansible_default_ipv4": {
+            "address": "172.31.2.75",
+            "alias": "eth0",
+            "broadcast": "172.31.15.255",
+            "gateway": "172.31.0.1",
+            "interface": "eth0",
+            "macaddress": "02:bf:fa:38:d6:c5",
+            "mtu": 9001,
+            "netmask": "255.255.240.0",
+            "network": "172.31.0.0",
+            "type": "ether"
+        },
+
+        ansible_default_ipv4.
+
      
