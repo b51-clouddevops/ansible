@@ -1,0 +1,10 @@
+- name: Demo on using shell module 
+  hosts: all 
+  tasks: 
+    - name: Running a shell commands 
+      ansible.builtin.shell: id
+      register: OUT
+
+    - name: Printing the out variable 
+      ansible.builtin.debug: 
+        msg: "{{OUT.stdout}}"
