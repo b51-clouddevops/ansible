@@ -3,7 +3,8 @@
   tasks:
     - name: Print OS Distro 
       ansible.builtin.debug: 
-        msg: OS Distro is {{ansible_distribution}}  
+        msg: Hello To CentOS 
+      when: {{ansible_distribution}}  
     
     - name: Printing Mac Address 
       ansible.builtin.debug:
