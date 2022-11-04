@@ -4,3 +4,4 @@
     action: true 
   tasks: 
     - name: Run this when os is centos 
+      debug:
