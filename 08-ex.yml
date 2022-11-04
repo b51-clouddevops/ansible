@@ -3,11 +3,13 @@
   tasks: 
     - name: Performing webserver installation 
       ansible.builtin.debug:
-            msg: Webservre installation completed 
+            msg: Webservre installation completed  
+      tags: web
 
     - name: Starting webserver  
       ansible.builtin.debug:
             msg: Webserver started 
+      tags: web
 
     - name: Performing appserver installation 
       ansible.builtin.debug:
