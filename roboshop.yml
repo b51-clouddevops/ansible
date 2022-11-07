@@ -1,4 +1,5 @@
 - name: Configure Roboshop Project 
   hosts: all 
   roles:
-    - 
+    - frontend
+    - catalogue
