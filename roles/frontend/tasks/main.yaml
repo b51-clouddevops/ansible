@@ -22,7 +22,7 @@
 
 - name: Copying Roboshop Configuration  
   ansible.builtin.copy:
-    src: /srv/myfiles/foo.conf
+    src: roboshop.conf 
     dest: /etc/foo.conf
     owner: foo
     group: foo
