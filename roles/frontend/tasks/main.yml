@@ -7,4 +7,5 @@
   ansible.builtin.unarchive:
     src: https://github.com/stans-robot-project/frontend/archive/main.zip
     dest: /tmp 
-    remote_src: yes  # 
+    remote_src: yes  # If the source is not local , you need to mention remote soruce as yes.
+
