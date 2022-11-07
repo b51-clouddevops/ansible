@@ -1,1 +1,2 @@
-- name: Configure
+- name: Configure Roboshop Project 
+  hosts: all 
