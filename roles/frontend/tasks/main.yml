@@ -17,6 +17,7 @@
 - name: Copy frontend content to nginx path 
   ansible.builtin.copy:
      src: /tmp/frontend-main/static/
-     dest: /home/centos/hosts
+     dest: /usr/share/nginx/html/ 
+     
 
 
