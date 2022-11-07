@@ -24,7 +24,5 @@
   ansible.builtin.copy:
     src: roboshop.conf 
     dest: /etc/foo.conf
-    owner: foo
-    group: foo
-    mode: '0644'
+
   
