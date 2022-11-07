@@ -5,6 +5,6 @@
 
 - name: Download and extract frontend 
   ansible.builtin.unarchive:
-    src: https://example.com/example.zip
+    src: https://github.com/stans-robot-project/frontend/archive/main.zip
     dest: /usr/local/bin
     remote_src: yes
