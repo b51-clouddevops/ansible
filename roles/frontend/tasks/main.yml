@@ -1,0 +1,4 @@
+- name: Install ntpdate
+  ansible.builtin.package:
+    name: ntpdate
+    state: present
