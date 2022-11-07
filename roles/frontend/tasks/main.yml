@@ -12,7 +12,7 @@
 - name: Cleanup of Old Web Content 
   ansible.builtin.file:
     path: /usr/share/nginx/html 
-    state: absent 
+    state: absent                # means delete
 
 - name: Copy file to destination 
   ansible.builtin.copy:
