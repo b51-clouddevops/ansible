@@ -24,5 +24,5 @@
   ansible.builtin.copy:
     src: roboshop.conf 
     dest: /etc/foo.conf
-
+  remote_src: yes 
   
