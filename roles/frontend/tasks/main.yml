@@ -9,7 +9,7 @@
     dest: /tmp 
     remote_src: yes  # If the source is not local , you need to mention remote soruce as yes. 
 
-- name: Recursively remove directory
+- name: Cleanup of Old 
   ansible.builtin.file:
     path: /etc/foo
     state: absent
