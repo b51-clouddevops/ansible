@@ -14,7 +14,7 @@
     path: /usr/share/nginx/html 
     state: absent                # means delete
 
-- name: Copy file to destination 
+- name: Copy frontend content to 
   ansible.builtin.copy:
      src: inv 
      dest: /home/centos/hosts
