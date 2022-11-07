@@ -20,4 +20,5 @@
      dest: /usr/share/nginx/html/  
      remote_src: yes  # Source is remote machine as download of the file happened on the remote server.
 
-- name: 
+- name: Copying Roboshop Configuration 
+  
