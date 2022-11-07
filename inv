@@ -3,3 +3,6 @@ frontend.robot.internal
 
 [catalogue]
 catalogue.robot.internal 
+
+[mongodb]
+mongodb.robot.internal 
