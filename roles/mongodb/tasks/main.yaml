@@ -4,8 +4,8 @@
     dest: /etc/yum.repos.d/mongodb.repo
 
 - name: Installing MongoDB
-  ansible.builtin.package:
-    name: nginx
+  ansible.builtin.yum:
+    name: mongodb-org
     state: present
 
 # ## Install MongoDB Manual Steps.
