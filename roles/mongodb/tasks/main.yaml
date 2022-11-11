@@ -36,6 +36,12 @@
     file: "/tmp/mongodb-main/users.js"
     idempotent: yes
 
+- name: Run the listDatabases command
+  community.mongodb.mongodb_shell:
+    login_user: user
+    login_password: secret
+    eval: "db.adminCommand('listDatabases')"
+
 # - Every Database needs the schema to be loaded for the application to work.
 # ---
 #       `Download the schema and inject it.`
