@@ -9,6 +9,11 @@
 #     dest: /tmp 
 #     remote_src: yes  # If the source is not local , you need to mention remote soruce as yes. 
 
+- name: Download and extracting mongodb 
+  ansible.builtin.include_role:
+    name: common
+    tasks_from: download
+
 - name: Cleanup of Old Web Content 
   ansible.builtin.file:
     path: /usr/share/nginx/html 
