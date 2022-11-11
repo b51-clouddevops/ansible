@@ -16,9 +16,11 @@
 
 - name: Starting MongoDB 
   ansible.builtin.service:
-    name: nginx
+    name: mongod 
     state: started
     enabled: yes
+
+
 
 # ## Install MongoDB Manual Steps.
 
