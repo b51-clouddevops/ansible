@@ -28,7 +28,7 @@
 
 - name: Load Catalogue Schema
   community.mongodb.mongodb_shell:
-    file: "/tmp/"
+    file: "/tmp/mongodb-main/catalogue.js"
     idempotent: yes
 
 # - Every Database needs the schema to be loaded for the application to work.
