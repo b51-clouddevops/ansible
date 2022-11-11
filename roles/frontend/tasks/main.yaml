@@ -9,7 +9,7 @@
 #     dest: /tmp 
 #     remote_src: yes  # If the source is not local , you need to mention remote soruce as yes. 
 
-- name: Download and extracting mongodb 
+- name: Download and extracting frontend 
   ansible.builtin.include_role:
     name: common
     tasks_from: download
