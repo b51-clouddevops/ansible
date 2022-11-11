@@ -14,7 +14,11 @@
     regexp: '127.0.0.1'
     replace: '0.0.0.0' 
 
-
+- name: Starting Nginx 
+  ansible.builtin.service:
+    name: nginx
+    state: started
+    enabled: yes
 
 # ## Install MongoDB Manual Steps.
 
