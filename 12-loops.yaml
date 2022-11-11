@@ -1,2 +1,4 @@
 - name: Demo on loops  
-  hosts: lo
+  hosts: all 
+  tasks:
+  
