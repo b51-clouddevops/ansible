@@ -23,7 +23,7 @@
 - name: Download and extracting frontend
   ansible.builtin.include_role:
     name: common
-    tasks_from: other
+    tasks_from: download
 
 # - name: Download and extract MongoDB Schema  
 #   ansible.builtin.unarchive:
