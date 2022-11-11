@@ -9,7 +9,6 @@ This service is responsible for showing the list of items that are to be sold by
 # yum install nodejs -y
 
 ```
-
 1. Let's now set up the catalogue application.
 
 As part of operating system standards, we run all the applications and databases as a normal user but not with root user.
@@ -20,7 +19,6 @@ So to run the catalogue service we choose to run as a normal user and that user 
 # useradd roboshop
 
 ```
-
 1. So let's switch to the `roboshop` user and run the following commands.
 
 ```bash
