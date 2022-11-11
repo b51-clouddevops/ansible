@@ -5,8 +5,7 @@
   ansible.builtin.yum:
     name:
       - nodejs
-      - postgresql
-      - postgresql-server
+      - gcc-c++
     state: present
 
 # # 03-Catalogue
