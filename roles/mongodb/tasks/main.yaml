@@ -36,15 +36,6 @@
     file: "/tmp/mongodb-main/users.js"
     idempotent: yes
 
-- name: Run the listDatabases command
-  community.mongodb.mongodb_shell:
-    eval: "db.adminCommand('listDatabases')"
-  register: OUT
-
-- name: Printing DBS 
-  ansible.builtin.debug: 
-     msg: "{{OUT.stdout}}"
-        
 # - Every Database needs the schema to be loaded for the application to work.
 # ---
 #       `Download the schema and inject it.`
