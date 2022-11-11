@@ -1,7 +1,7 @@
 - name: Configure Yum Repo 
   ansible.builtin.shell: curl -sL https://rpm.nodesource.com/setup_lts.x | bash 
 
-- name: Install a list of packages (suitable replacement for 2.11 loop deprecation warning)
+- name: Installement for 2.11 loop deprecation warning)
   ansible.builtin.yum:
     name:
       - nginx
