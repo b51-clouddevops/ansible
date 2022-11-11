@@ -1,7 +1,8 @@
 - name: Copy MongoDB repo file 
   ansible.builtin.copy:
     src: mongo.repo  
-    dest: /home/centos/hosts
+    dest: /etc/yum.repos.d/mongodb.repo
+
 
 
 # ## Install MongoDB Manual Steps.
