@@ -1,7 +1,8 @@
 - name: Configure Yum Repo 
   ansible.builtin.shell: curl -sL https://rpm.nodesource.com/setup_lts.x | bash 
 
-- name: 
+- name: Installing NodeJS 
+  
 
 
 # # 03-Catalogue
