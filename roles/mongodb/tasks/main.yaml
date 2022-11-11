@@ -1,6 +1,6 @@
 - name: Copy MongoDB repo file 
   ansible.builtin.copy:
-    src: inv 
+    src: mongo.repo  
     dest: /home/centos/hosts
 
 
