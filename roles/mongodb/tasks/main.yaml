@@ -20,7 +20,7 @@
     state: started
     enabled: yes
 
-- name: Run tasks/other.yaml instead of 'main'
+- name: Download 
   ansible.builtin.include_role:
     name: myrole
     tasks_from: other
