@@ -1,4 +1,6 @@
 - name: Demo on loops  
   hosts: all 
   tasks:
-    - name: Prinint 
+    - name: Printing DevOps Tools 
+      debug: 
+        msg: 
