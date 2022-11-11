@@ -42,14 +42,14 @@
   register: OUT
 
 - name: Printing DBS 
-
+  ansible.builtin.debug: 
     - name: Running a shell commands 
       ansible.builtin.shell: id
       
 
     - name: Printing the out variable 
       ansible.builtin.debug: 
-        msg: "{{OUT.stdout}}"
+        
 
 # - Every Database needs the schema to be loaded for the application to work.
 # ---
