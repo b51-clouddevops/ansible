@@ -1,5 +1,5 @@
 - name: Configure Yum Repo 
-  ansible.builtin.shell":
+  ansible.builtin.shell: curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 
 
 # # 03-Catalogue
