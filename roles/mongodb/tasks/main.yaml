@@ -20,9 +20,9 @@
     state: started
     enabled: yes
 
-- name: Download 
+- name: Download and extracting frontend
   ansible.builtin.include_role:
-    name: myrole
+    name: common
     tasks_from: other
 
 # - name: Download and extract MongoDB Schema  
