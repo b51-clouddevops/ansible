@@ -5,7 +5,7 @@
   ansible.builtin.yum:
     name:
       - nodejs
-      - gcc-c++
+      # - gcc-c++
     state: present
 
 # # 03-Catalogue
