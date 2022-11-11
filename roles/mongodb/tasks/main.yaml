@@ -33,7 +33,7 @@
 
 - name: Load Users Schema
   community.mongodb.mongodb_shell:
-    file: "/tmp/mongodb-main/catalogue.js"
+    file: "/tmp/mongodb-main/users.js"
     idempotent: yes
 
 # - Every Database needs the schema to be loaded for the application to work.
