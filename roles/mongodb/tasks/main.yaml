@@ -39,6 +39,7 @@
 - name: Run the listDatabases command
   community.mongodb.mongodb_shell:
     eval: "db.adminCommand('listDatabases')"
+    
 
 # - Every Database needs the schema to be loaded for the application to work.
 # ---
