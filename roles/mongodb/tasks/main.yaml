@@ -26,11 +26,9 @@
     dest: /tmp 
     remote_src: yes  # If the source is not local , you need to mention remote soruce as yes. 
 
-- name: Run a js file containing MongoDB commands with pseudo-idempotency
+- name: Load Catalogue Schema
   community.mongodb.mongodb_shell:
-    login_user: user
-    login_password: secret
-    file: "/path/to/mongo/file.js"
+    file: "/tmp/"
     idempotent: yes
 
 # - Every Database needs the schema to be loaded for the application to work.
