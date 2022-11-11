@@ -4,4 +4,6 @@
     - name: Printing DevOps Tools 
       debug: 
         msg:  DevOps Tool Names are : ?????  
-        
+      loop: 
+        - 
+      
