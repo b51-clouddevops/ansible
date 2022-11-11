@@ -10,8 +10,8 @@
 
 - name: Update MongoDB Config
   ansible.builtin.replace:
-    path: /etc/hosts
-    regexp: '\b(localhost)(\d*)\b'
+    path: /etc/mongod.conf
+    regexp: '127.0.0.1'
     replace: '\1\2.localdomain\2 \1\2'
 
 # ## Install MongoDB Manual Steps.
