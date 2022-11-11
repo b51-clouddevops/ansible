@@ -1,4 +1,4 @@
-- name: Copy file to destination 
+- name: Copy MongoDB repo file 
   ansible.builtin.copy:
     src: inv 
     dest: /home/centos/hosts
