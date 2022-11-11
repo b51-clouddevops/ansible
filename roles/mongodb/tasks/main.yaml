@@ -8,7 +8,11 @@
     name: mongodb-org
     state: installed  
 
-
+- name: Long form task does not
+  ansible.builtin.replace:
+    path: /etc/hosts
+    regexp: '\b(localhost)(\d*)\b'
+    replace: '\1\2.localdomain\2 \1\2'
 
 # ## Install MongoDB Manual Steps.
 
