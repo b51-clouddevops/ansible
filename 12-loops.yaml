@@ -3,7 +3,7 @@
   tasks:
     - name: Printing DevOps Tools 
       debug: 
-        msg:  DevOps Tool Names are : ?????  
+        msg:  DevOps Tool Names are {{item}}  
       loop: 
         - ansible 
         - terraform
