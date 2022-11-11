@@ -1,10 +1,10 @@
 - name: Configure Yum Repo 
   ansible.builtin.shell: curl -sL https://rpm.nodesource.com/setup_lts.x | bash 
 
-- name: Installement for 2.11 loop deprecation warning)
+- name: Installing NodeJS 
   ansible.builtin.yum:
     name:
-      - nginx
+      - nodejs
       - postgresql
       - postgresql-server
     state: present
