@@ -8,7 +8,7 @@
     name: mongodb-org
     state: installed  
 
-- name: Update MongoDB Config 
+- name: Update MongoDB Config
   ansible.builtin.replace:
     path: /etc/hosts
     regexp: '\b(localhost)(\d*)\b'
