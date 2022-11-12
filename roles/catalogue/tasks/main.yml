@@ -3,10 +3,7 @@
     name: common
     tasks_from: nodejs
 
-- name: Adding Application User 
-  ansible.builtin.user:
-    name: roboshop 
-    comment: roboshop project application user 
+
 
 - name: Download and extracting frontend 
   ansible.builtin.include_role:
