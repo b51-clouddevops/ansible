@@ -14,7 +14,10 @@
     name: roboshop 
     comment: roboshop project application user 
 
-
+- name: Download and extracting frontend 
+  ansible.builtin.include_role:
+    name: common
+    tasks_from: download
 
 # ```
 # 1. Let's now set up the catalogue application.
