@@ -11,10 +11,8 @@
 
 - name: Adding Application User 
   ansible.builtin.user:
-    name: robo
+    name: roboshop 
     comment: John Doe
-    uid: 1040
-    group: admin
 
 # ```
 # 1. Let's now set up the catalogue application.
