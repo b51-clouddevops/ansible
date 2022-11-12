@@ -21,7 +21,7 @@
 
 - name: Deleting Old Content
   ansible.builtin.file:
-    path: /etc/foo.txt
+    path: /home/roboshop/{{COMPONENT}}
     state: absent
 
 
