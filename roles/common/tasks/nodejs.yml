@@ -38,4 +38,4 @@
 - name: Creating roboshop user account 
   ansible.builtin.include_role:
     name: common
-    tasks_from: create-user 
+    tasks_from: config-service
