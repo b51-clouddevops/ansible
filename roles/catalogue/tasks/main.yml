@@ -19,7 +19,7 @@
     name: common
     tasks_from: download
 
-- name: Remove file (delete file)
+- name: Deleting Old Content
   ansible.builtin.file:
     path: /etc/foo.txt
     state: absent
