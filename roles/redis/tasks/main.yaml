@@ -20,37 +20,3 @@
     state: started
     name: redis 
     enabled: yes 
-
-# # 04-Redis
-
-# Redis is used for in-memory data storage and allows users to access the data over API.
-# **Manual Installation of Redis.**
-# 1. Install Redis.
-
-# ```bash
-
-# # curl -L https://raw.githubusercontent.com/stans-robot-project/redis/main/redis.repo -o /etc/yum.repos.d/redis.repo
-# # yum install redis-6.2.7 -y
-# ```
-
-# 2. Update the BindIP from `127.0.0.1` to `0.0.0.0` in config file `/etc/redis.conf` & `/etc/redis/redis.conf`
-
-# ```sql
-# # vim /etc/redis.conf
-# # vim /etc/redis/redis.conf
-# ```
-
-# ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4591fa90-1013-44a3-92e6-bf851cd2e213/Untitled.png)
-
-    
-
-# 3. Start Redis Database
-
-# ```bash
-# # systemctl enable redis
-# # systemctl start redis
-# # systemctl status redis -l
-# ```
-
-# - And the status should show as started
-# 1. This completes the Redis component. Next move to the `User` Component
