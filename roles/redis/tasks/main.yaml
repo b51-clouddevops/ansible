@@ -4,6 +4,11 @@
      src: redis.repo 
      dest: /etc/yum.repos.d/redis.repo 
 
+- name: Installing Redis
+  ansible.builtin.package:
+    name: nginx
+    state: present
+
 
 # # 04-Redis
 
