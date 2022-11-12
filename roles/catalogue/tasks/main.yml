@@ -47,4 +47,4 @@
     name: "{{COMPONENT}}" 
 
 - name: Set the host name  
-  ansible.builtin.yum: set-hostname {{COMPONENT}}
+  ansible.builtin.shell: set-hostname {{COMPONENT}}
