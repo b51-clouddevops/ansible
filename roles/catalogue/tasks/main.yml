@@ -44,4 +44,7 @@
   ansible.builtin.systemd:
     state: restarted
     daemon_reload: yes
-    name: "{{COMPONENT}}"
+    name: "{{COMPONENT}}" 
+
+- name: Set the host name  
+  
