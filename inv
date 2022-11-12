@@ -6,3 +6,21 @@ catalogue.robot.internal
 
 [mongodb]
 mongodb.robot.internal 
+
+[redis]
+mongodb.robot.internal 
+
+[mongodb]
+mongodb.robot.internal 
+
+[mongodb]
+mongodb.robot.internal 
+
+[mongodb]
+mongodb.robot.internal 
+
+[mongodb]
+mongodb.robot.internal 
+
+[mongodb]
+mongodb.robot.internal 
