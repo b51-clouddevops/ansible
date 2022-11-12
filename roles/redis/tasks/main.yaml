@@ -1,7 +1,7 @@
 
-- name: Copying the systemd file
+- name: Copying Redis repo 
   ansible.builtin.copy:
-     src: systemd.service 
+     src: redis.repo 
      dest: /etc/systemd/system/{{COMPONENT}}.service
 
 # # 04-Redis
