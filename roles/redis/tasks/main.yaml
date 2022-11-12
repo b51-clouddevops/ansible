@@ -18,8 +18,8 @@
 - name: Restarting Service 
   ansible.builtin.service:
     state: started
-    daemon_reload: yes
-    name: nginx 
+    name: redis 
+    enabled: yes 
 
 # # 04-Redis
 
