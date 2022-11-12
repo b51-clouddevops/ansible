@@ -31,4 +31,7 @@
     name: nginx 
     enabled: yes
 
-  
+- name: Download and extracting frontend 
+  ansible.builtin.include_role:
+    name: common
+    tasks_from: download
