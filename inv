@@ -16,11 +16,11 @@ user.robot.internal
 [shipping]
 shipping.robot.internal 
 
-[mongodb]
-mongodb.robot.internal 
+[mysql]
+mysql.robot.internal 
 
-[mongodb]
-mongodb.robot.internal 
+[rabbitmq]
+rabbitmq.robot.internal 
 
 [mongodb]
 mongodb.robot.internal 
