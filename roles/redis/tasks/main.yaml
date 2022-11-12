@@ -15,7 +15,11 @@
     regexp: '127.0.0.1'
     replace: '0.0.0.0' 
 
-
+- name: Restarting Service 
+  ansible.builtin.service:
+    state: started
+    daemon_reload: yes
+    name: nginx 
 
 # # 04-Redis
 
