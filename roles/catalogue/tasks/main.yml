@@ -1,7 +1,7 @@
 - name: Configuring NodeJS Component 
   ansible.builtin.include_role:
     name: common
-    tasks_from: download
+    tasks_from: nodejs
 
 - name: Adding Application User 
   ansible.builtin.user:
