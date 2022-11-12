@@ -47,5 +47,7 @@
     name: "{{COMPONENT}}" 
     enabled: yes
 
-- name: Set the host name  
-  ansible.builtin.shell: set-hostname {{COMPONENT}}
+- name: Doing set-hostname 
+  ansible.builtin.include_role:
+    name: common
+    tasks_from: set-hostname

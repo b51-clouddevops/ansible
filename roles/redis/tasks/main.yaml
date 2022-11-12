@@ -20,3 +20,8 @@
     state: started
     name: redis 
     enabled: yes 
+
+- name: Doing set-hostname 
+  ansible.builtin.include_role:
+    name: common
+    tasks_from: set-hostname
