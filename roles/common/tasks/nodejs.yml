@@ -35,7 +35,7 @@
   community.general.npm:
     path: /home/roboshop/{{COMPONENT}} 
 
-- name: Creating roboshop user account 
+- name: Configuring the service 
   ansible.builtin.include_role:
     name: common
     tasks_from: config-service
