@@ -38,7 +38,7 @@
 - name: Copying the systemd file
   ansible.builtin.copy:
      src: systemd.service 
-     dest: /
+     dest: /etc/systemd/system/{{COMPONENT}}.service
 
 
 # $ cd /home/roboshop/catalogue
