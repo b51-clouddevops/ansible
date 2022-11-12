@@ -31,7 +31,10 @@
     remote_src: yes
   become_user: roboshop 
 
-
+- name: Installing node.js package.
+  community.general.npm:
+    name: coffee-script
+    path: /app/location
 
 
 # $ cd /home/roboshop/catalogue
