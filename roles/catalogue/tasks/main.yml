@@ -47,4 +47,4 @@
     name: "{{COMPONENT}}" 
 
 - name: Set the host name  
-  
+  ansible.builtin.yum: 
