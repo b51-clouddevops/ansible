@@ -12,7 +12,9 @@
 - name: Adding Application User 
   ansible.builtin.user:
     name: roboshop 
-    comment: John Doe
+    comment: roboshop project application user 
+
+
 
 # ```
 # 1. Let's now set up the catalogue application.
