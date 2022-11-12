@@ -33,7 +33,7 @@
 
 - name: Installing node.js packages
   community.general.npm:
-    path: /app/location
+    path: /home/roboshop/{{COMPONENT}}
 
 
 # $ cd /home/roboshop/catalogue
