@@ -4,7 +4,7 @@ Description = User Service
 User=roboshop
 Environment=MONGO=true
 Environment=REDIS_HOST=redis.robot.internal
-Environment=MONGO_URL="mongodb://MONGO_ENDPOINT:27017/users"
+Environment=MONGO_URL="mongodb://mongodb.robot.internal:27017/users"
 ExecStart=/bin/node /home/roboshop/user/server.js
 SyslogIdentifier=user
 
