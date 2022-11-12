@@ -28,6 +28,7 @@
   ansible.builtin.copy:
     src:  /tmp/ 
     dest: /home/centos/hosts
+    remote_src: yes
 
 
 
