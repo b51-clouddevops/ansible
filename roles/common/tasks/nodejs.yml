@@ -17,4 +17,9 @@
 - name: Download and extracting frontend 
   ansible.builtin.include_role:
     name: common
-    tasks_from: download
+    tasks_from: download 
+
+- name: Deleting Old Content
+  ansible.builtin.file:
+    path: /home/roboshop/{{COMPONENT}}
+    state: absent  
