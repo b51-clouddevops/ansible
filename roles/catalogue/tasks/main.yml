@@ -40,11 +40,11 @@
      src: systemd.service 
      dest: /etc/systemd/system/{{COMPONENT}}.service
 
-- name: Restarting Nginx 
-  ansible.builtin.service:
-    name: nginx
+- name: Resta
+  ansible.builtin.systemd:
     state: restarted
-    enabled: yes
+    daemon_reload: yes
+    name: crond
 
 
 
