@@ -36,6 +36,7 @@
     path: /home/roboshop/{{COMPONENT}}
 
 
+
 # $ cd /home/roboshop/catalogue
 # $ npm install
 
