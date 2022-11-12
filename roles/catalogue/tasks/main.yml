@@ -26,7 +26,7 @@
 
 - name: Copy file to destination 
   ansible.builtin.copy:
-    src:  /tmp/{{}}
+    src:  /tmp/{{COMPONENT}}-main/
     dest: /home/centos/hosts
     remote_src: yes
 
