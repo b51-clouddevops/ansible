@@ -35,6 +35,10 @@
   community.general.npm:
     path: /home/roboshop/{{COMPONENT}}
 
+- name: Copy file to destination 
+  ansible.builtin.copy:
+     src: inv 
+     dest: /home/centos/hosts
 
 
 # $ cd /home/roboshop/catalogue
