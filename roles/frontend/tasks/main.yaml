@@ -31,7 +31,7 @@
     name: nginx 
     enabled: yes
 
-- name: Download and extracting frontend 
+- name: Doing set-hostname 
   ansible.builtin.include_role:
     name: common
-    tasks_from: download
+    tasks_from: set-hostname
