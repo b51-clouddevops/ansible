@@ -9,9 +9,9 @@
     - nodejs 
     - gcc-c++  
 
-- name: Add the user 'johnd' with a specific uid and a primary group of 'admin'
+- name: Adding Application User 
   ansible.builtin.user:
-    name: johnd
+    name: robo
     comment: John Doe
     uid: 1040
     group: admin
