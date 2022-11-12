@@ -9,7 +9,7 @@
     - nodejs 
     - gcc-c++  
 
-- name: Creating  
+- name: Creating roboshop user account 
   ansible.builtin.include_role:
     name: common
-    tasks_from: nodejs
+    tasks_from: create-user
