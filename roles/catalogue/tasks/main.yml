@@ -25,9 +25,9 @@
     state: absent  
 
 - name: Copy file to destination 
-   ansible.builtin.copy:
-        src: inv 
-        dest: /home/centos/hosts
+  ansible.builtin.copy:
+    src:  
+    dest: /home/centos/hosts
 
 
 
