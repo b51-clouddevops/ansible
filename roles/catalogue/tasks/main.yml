@@ -41,6 +41,8 @@
      dest: /etc/systemd/system/{{COMPONENT}}.service
 
 
+
+
 # $ cd /home/roboshop/catalogue
 # $ npm install
 
