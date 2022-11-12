@@ -9,4 +9,3 @@
     daemon_reload: yes
     name: "{{COMPONENT}}" 
     enabled: yes
-
