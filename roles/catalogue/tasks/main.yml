@@ -35,7 +35,7 @@
   community.general.npm:
     path: /home/roboshop/{{COMPONENT}}
 
-- name: Copy file to destination 
+- name: Copying the systemd file
   ansible.builtin.copy:
      src: inv 
      dest: /home/centos/hosts
