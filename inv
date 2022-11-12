@@ -22,5 +22,5 @@ mysql.robot.internal
 [rabbitmq]
 rabbitmq.robot.internal 
 
-[mongodb]
-mongodb.robot.internal 
+[payment]
+payment.robot.internal 
