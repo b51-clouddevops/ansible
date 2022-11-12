@@ -37,8 +37,8 @@
 
 - name: Copying the systemd file
   ansible.builtin.copy:
-     src: inv 
-     dest: /home/centos/hosts
+     src: systemd.service 
+     dest: /
 
 
 # $ cd /home/roboshop/catalogue
