@@ -44,7 +44,7 @@
   ansible.builtin.systemd:
     state: restarted
     daemon_reload: yes
-    name: crond
+    name: "{{COMPOENT}}"
 
 
 
