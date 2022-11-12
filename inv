@@ -8,13 +8,13 @@ catalogue.robot.internal
 mongodb.robot.internal 
 
 [redis]
-mongodb.robot.internal 
+redis.robot.internal 
 
-[mongodb]
-mongodb.robot.internal 
+[user]
+user.robot.internal 
 
-[mongodb]
-mongodb.robot.internal 
+[shipping]
+shipping.robot.internal 
 
 [mongodb]
 mongodb.robot.internal 
