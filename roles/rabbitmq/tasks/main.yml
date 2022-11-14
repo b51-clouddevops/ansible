@@ -3,5 +3,6 @@
 
 - name: Installing RabbitMQ and Dependencies
   ansible.builtin.yum:
-    name: nginx
+    name: 
+      - 
     state: installed 
