@@ -42,7 +42,7 @@
  
 - name: Checking Password validate Plugin 
   ansible.builtin.shell: echo show plugins; | mysql -uroot -pRoboShop@1  | grep validate_password
-  register: DEFAULT_ROOT_PASSWORD   
+  register: PLUGIN_INFO   
 
 # 1. Next, We need to change the default root password in order to start using the database service. Use password as `RoboShop@1` . Rest of the options you can choose `No`
 
