@@ -26,9 +26,7 @@
     remote_src: yes
   become_user: roboshop 
 
-# - name: Installing node.js packages
-#   community.general.npm:
-#     path: /home/roboshop/{{COMPONENT}} 
+
 
 # - name: Configuring the service 
 #   ansible.builtin.include_role:
