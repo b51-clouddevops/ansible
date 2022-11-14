@@ -1,4 +1,3 @@
-
 - name: Installing Maven 
   ansible.builtin.yum:
     name: maven
