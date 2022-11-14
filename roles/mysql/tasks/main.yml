@@ -25,7 +25,7 @@
   register: stat
 
 - name: Fetch MySQL Default Password
-  debug:
+  ansible.builtin.shell:
     msg: I am an xyz task
   when: stat.failed 
 
