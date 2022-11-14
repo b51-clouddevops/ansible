@@ -65,7 +65,7 @@
   community.mysql.mysql_db:
     state: import
     name: all
-    target: /tmp/mysql-main/shipping.mysql
+    target: /tmp/mysql-main/shipping.sql
     login_user: root 
     login_password: RoboShop@1
 
