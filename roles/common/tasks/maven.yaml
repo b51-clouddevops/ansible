@@ -26,6 +26,9 @@
     remote_src: yes
   become_user: roboshop 
 
+- name: Reset MySQL Default Password
+  ansible.builtin.shell:  mysql  --connect-expired-password  -uroot -p"{{DEFAULT_ROOT_PASSWORD.stdout}}"  < /tmp/root_password.sql
+      register: DEFAULT_ROOT_PASSWORD
 
 
 # - name: Configuring the service 
