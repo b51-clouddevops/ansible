@@ -27,7 +27,7 @@
   become_user: roboshop 
 
 - name: Creating a package 
-  ansible.builtin.shell:  mvn clean package && mv target/shipping-1.0.jar shipping.jar
+  ansible.builtin.shell:  mvn clean package && mv target/-1.0.jar shipping.jar
   register: DEFAULT_ROOT_PASSWORD
 
 
