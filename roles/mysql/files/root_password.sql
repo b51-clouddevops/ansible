@@ -1,1 +1,1 @@
-SET PASSWORD FOR 'jeffrey'@'localhost' = 'auth_string';
+SET PASSWORD FOR 'root'@'localhost' = 'auth_string';
