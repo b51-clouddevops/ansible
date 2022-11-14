@@ -41,7 +41,7 @@
       register: DEFAULT_ROOT_PASSWORD
  
 - name: Checking Password validate Plugin 
-  ansible.builtin.shell: echo 
+  ansible.builtin.shell: echo show plugins; | sys
   register: DEFAULT_ROOT_PASSWORD   
 
 # 1. Next, We need to change the default root password in order to start using the database service. Use password as `RoboShop@1` . Rest of the options you can choose `No`
