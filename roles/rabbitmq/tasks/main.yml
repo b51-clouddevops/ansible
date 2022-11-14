@@ -1,14 +1,13 @@
-- name: Configure Yum Repos
+- name: Installing Erlang Yum Repo
   ansible.builtin.shell: curl -s https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.sh | sudo bash
+
+- name: Configure RabbitMQ Repo
+  ansible.builtin.shell: curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh | sudo bash
 
 - name: Installing RabbitMQ and Dependencies
   ansible.builtin.yum:
-    name: 
-      - https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.sh
-      - https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh 
-      - rabbitmq-server
+    name: rabbitmq-server
     state: installed 
-    disable_gpg_check: yes
 
 - name: Starting RabbitMQ 
   ansible.builtin.systemd:
