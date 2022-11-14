@@ -53,7 +53,7 @@
         src: password_validate.mysql  
         dest: /tmp/password_validate.repo  
      
-     - name: Uninstall plugin 
+     - name: Uninstall password validate plugin 
 
 # 1. Next, We need to change the default root password in order to start using the database service. Use password as `RoboShop@1` . Rest of the options you can choose `No`
 
