@@ -33,6 +33,7 @@
   ansible.builtin.copy:
     src: root_password.sql
     dest: /tmp/root_password.sql
+  when: stat.failed  
 
 # 1. Now a default root password will be generated and can be seen in the log file.
 
