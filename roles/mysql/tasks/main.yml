@@ -26,7 +26,6 @@
 
 - name: Fetch MySQL Default Password
   ansible.builtin.shell:
-    msg: I am an xyz task
   when: stat.failed 
 
 # 1. Now a default root password will be generated and can be seen in the log file.
