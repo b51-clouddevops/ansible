@@ -24,7 +24,7 @@
   ignore_errors: yes 
   register: stat
 
-- name: This is some xyz task
+- name: Fetch MySQL Default Password
   debug:
     msg: I am an xyz task
   when: stat.failed 
