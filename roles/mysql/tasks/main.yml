@@ -65,7 +65,7 @@
   community.mysql.mysql_db:
     state: import
     name: all
-    target: /tmp/dump.sql
+    target: /tmp/
     master_data: 1
 
 # So we need to load that schema into the database, So those applications will detect them and run accordingly.
