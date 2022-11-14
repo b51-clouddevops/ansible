@@ -61,6 +61,12 @@
     name: common
     tasks_from: download
 
+- name: Dump all databases to hostname.sql including master data
+  community.mysql.mysql_db:
+    state: dump
+    name: all
+    target: /tmp/dump.sql
+    master_data: 1
 
 # So we need to load that schema into the database, So those applications will detect them and run accordingly.
 
