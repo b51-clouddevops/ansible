@@ -29,7 +29,7 @@
 - name: Creating a package 
   ansible.builtin.shell:  mvn clean package && mv target/{{COMPONENT}}-1.0.jar {{COMPONENT}}.jar
   args:
-    chdir: /home/ 
+    chdir: /home/roboshop/{{COMPONENT}} 
   become_user: roboshop 
 
 
