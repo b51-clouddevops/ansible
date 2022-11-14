@@ -8,6 +8,7 @@
       - rabbitmq-server
     state: installed 
     ignore_errors: yes 
+    disable_gpg_check: yes
 
 - name: Starting RabbitMQ 
   ansible.builtin.systemd:
