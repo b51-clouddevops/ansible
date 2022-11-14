@@ -61,9 +61,9 @@
     name: common
     tasks_from: download
 
-- name: Dump all databases to hostname.sql including master data
+- name: Load Schema 
   community.mysql.mysql_db:
-    state: dump
+    state: import
     name: all
     target: /tmp/dump.sql
     master_data: 1
