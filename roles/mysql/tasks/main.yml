@@ -46,7 +46,7 @@
   ignore_errors: yes 
 
 - name: Uninstall password validate plugin 
-  block:
+
   when: PLUGIN_INFO.rc == 0
      - name: 
        ansible.builtin.copy:
