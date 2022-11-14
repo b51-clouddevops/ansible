@@ -12,5 +12,6 @@
   ansible.builtin.systemd:
     state: started
     daemon_reload: yes
-    name: nginx 
-    enabled: yes
+    name: rabbitmq-server 
+    enabled: yes 
+
