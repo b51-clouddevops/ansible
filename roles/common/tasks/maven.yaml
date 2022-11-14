@@ -29,7 +29,8 @@
 - name: Creating a package 
   ansible.builtin.shell:  mvn clean package && mv target/{{COMPONENT}}-1.0.jar {{COMPONENT}}.jar
   become_user: roboshop 
-  
+   args:
+    chdir: somedir/ 
 
 
 # - name: Configuring the service 
