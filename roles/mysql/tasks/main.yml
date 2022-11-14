@@ -48,7 +48,7 @@
 - name: Uninstall password validate plugin 
   when: PLUGIN_INFO.rc == 0
   block:
-     - name: 
+     - name: Copying the 
        ansible.builtin.copy:
         src: password_validate.mysql  
         dest: /tmp/password_validate.repo 
