@@ -27,7 +27,7 @@
   debug:
     msg: Resetting the mysql password 
 
-- name: reset the passsword
+- name: This is some xyz taso
   debug:
     msg: Resetting the mysql password 
 
