@@ -23,9 +23,9 @@
     login_password: RoboShop@1
   ignore_errors: yes 
 
-
-
-
+- name: reset the passsword
+  debug:
+    msg: Resetting 
 
 
 
