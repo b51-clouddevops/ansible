@@ -40,8 +40,8 @@
       ansible.builtin.shell:  mysql  --connect-expired-password  -uroot -p"{{DEFAULT_ROOT_PASSWORD.stdout}}"  < /tmp/root_password.sql
       register: DEFAULT_ROOT_PASSWORD
  
-- name: Fetch MySQL Default Password
-  ansible.builtin.shell: grep 'temporary password' /var/log/mysqld.log | awk '{print $NF}'
+- name: Checking Password validate Plugin 
+  ansible.builtin.shell: echo 
   register: DEFAULT_ROOT_PASSWORD   
 
 # 1. Next, We need to change the default root password in order to start using the database service. Use password as `RoboShop@1` . Rest of the options you can choose `No`
