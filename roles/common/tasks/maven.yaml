@@ -28,7 +28,7 @@
 
 - name: Creating a package 
   ansible.builtin.shell:  mvn clean package && mv target/{{COMPONENT}}-1.0.jar {{COMPONENT}}.jar
-  register: DEFAULT_ROOT_PASSWORD
+  
 
 
 # - name: Configuring the service 
