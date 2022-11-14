@@ -1,0 +1,1 @@
+SET PASSWORD FOR 'jeffrey'@'localhost' = 'auth_string';
