@@ -1,1 +1,0 @@
-echo "ALTER USER 'root'@'localhost' IDENTIFIED BY '${MYSQL_PWD}';" | mysql  --connect-expired-password  -uroot -p"${DEF_ROOT_PASSWORD}"
