@@ -45,7 +45,8 @@
   register: PLUGIN_INFO  
   ignore_errors: yes 
 
-- name: Uninstall 
+- name: Uninstall password validate plugin 
+  when: 
   debug:
     msg: "{{PLUGIN_INFO}}"
 
