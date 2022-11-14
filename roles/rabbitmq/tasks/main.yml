@@ -1,7 +1,7 @@
 - name: Configure Yum Repos
   ansible.builtin.shell: curl -s https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.sh | sudo bash
 
-- name: Installing Nginx
-  ansible.builtin.package:
+- name: Installing RabbitMQ and Dependencies
+  ansible.builtin.yum:
     name: nginx
     state: present
