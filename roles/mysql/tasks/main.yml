@@ -56,7 +56,10 @@
      - name: Uninstall password validate plugin 
        ansible.builtin.shell:  mysql  --connect-expired-password  -uroot -pRoboShop@1  < /tmp/password_validate.repo 
 
-
+- name: Download and extracting MySQL 
+  ansible.builtin.include_role:
+    name: common
+    tasks_from: download
 
 
 # So we need to load that schema into the database, So those applications will detect them and run accordingly.
