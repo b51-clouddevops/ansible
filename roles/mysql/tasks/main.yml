@@ -48,8 +48,8 @@
 - name: Uninstall password validate plugin 
   when: PLUGIN_INFO.rc == 0
   ansible.builtin.copy:
-    src: mysql.repo  
-    dest: /etc/yum.repos.d/mysql.repo 
+    src: password_validate.mysql  
+    dest: /etc/yum.repos.d/password_validate.repo 
 
 # 1. Next, We need to change the default root password in order to start using the database service. Use password as `RoboShop@1` . Rest of the options you can choose `No`
 
