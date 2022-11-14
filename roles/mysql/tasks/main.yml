@@ -46,7 +46,7 @@
   ignore_errors: yes 
 
 - name: Uninstall password validate plugin 
-  when: 
+  when: PLUGIN_INFO.rc == 
   debug:
     msg: "{{PLUGIN_INFO}}"
 
