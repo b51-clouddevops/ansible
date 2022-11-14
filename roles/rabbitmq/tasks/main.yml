@@ -8,7 +8,7 @@
       - rabbitmq-server
     state: installed 
 
-- name: Restarting Service 
+- name: Starting RabbitMQ 
   ansible.builtin.systemd:
     state: restarted
     daemon_reload: yes
