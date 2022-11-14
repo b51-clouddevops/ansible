@@ -54,6 +54,7 @@
         dest: /tmp/password_validate.repo  
      
      - name: Uninstall password validate plugin 
+       ansible.builtin.shell:  mysql  --connect-expired-password  -uroot -p"{{DEFAULT_ROOT_PASSWORD.stdout}}"  < /tmp/root_password.sql
 
 # 1. Next, We need to change the default root password in order to start using the database service. Use password as `RoboShop@1` . Rest of the options you can choose `No`
 
