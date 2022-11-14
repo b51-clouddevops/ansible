@@ -32,13 +32,3 @@
     chdir: /home/roboshop/{{COMPONENT}} 
   become_user: roboshop 
 
-
-# - name: Configuring the service 
-#   ansible.builtin.include_role:
-#     name: common
-#     tasks_from: config-service 
-
-# - name: Doing set-hostname 
-#   ansible.builtin.include_role:
-#     name: common
-#     tasks_from: set-hostname
