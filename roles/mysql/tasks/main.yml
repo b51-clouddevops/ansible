@@ -36,7 +36,7 @@
   when: stat.failed   
 
 - name: Reset MySQL Default Password
-  ansible.builtin.shell:  mysql  --connect-expired-password  -uroot -p"{{DEFAULT_ROOT_PASSWORD}}"
+  ansible.builtin.shell:  mysql  --connect-expired-password  -uroot -p"{{DEFAULT_ROOT_PASSWORD.stdout}}"
   register: DEFAULT_ROOT_PASSWORD
   when: stat.failed  
 
