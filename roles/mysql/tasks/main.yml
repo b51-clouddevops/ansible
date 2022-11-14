@@ -57,6 +57,8 @@
        ansible.builtin.shell:  mysql  --connect-expired-password  -uroot -pRoboShop@1  < /tmp/password_validate.repo 
 
 
+
+
 # So we need to load that schema into the database, So those applications will detect them and run accordingly.
 
 # To download schema, Use the following command
