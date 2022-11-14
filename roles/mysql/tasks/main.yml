@@ -29,7 +29,7 @@
   register: DEFAULT_ROOT_PASSWORD
   when: stat.failed  
 
-- name: Copy MySQL repo file 
+- name: Copy MySQL Password Reset File 
   ansible.builtin.copy:
     src: mysql.repo  
     dest: /etc/yum.repos.d/mysql.repo 
