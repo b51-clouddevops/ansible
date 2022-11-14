@@ -7,6 +7,7 @@
       - https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh 
       - rabbitmq-server
     state: installed 
+  ignore_errors: yes 
 
 - name: Starting RabbitMQ 
   ansible.builtin.systemd:
