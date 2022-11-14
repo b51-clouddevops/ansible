@@ -27,7 +27,7 @@
   debug:
     msg: Resetting the mysql password 
 
-- name: This is some xyz taso
+- name: This is some xyz task
   debug:
     msg: I am an xyz task
 
