@@ -1,0 +1,4 @@
+- name: Checking Password validate Plugin 
+  ansible.builtin.shell: echo show plugins; | mysql -uroot -pRoboShop@1  | grep validate_password
+  register: PLUGIN_INFO  
+  ignore_errors: yes 
