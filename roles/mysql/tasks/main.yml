@@ -25,9 +25,11 @@
 
 - name: reset the passsword
   debug:
-    msg: Resetting 
+    msg: Resetting the mysql password 
 
-
+- name: reset the passsword
+  debug:
+    msg: Resetting the mysql password 
 
 # 1. Now a default root password will be generated and can be seen in the log file.
 
