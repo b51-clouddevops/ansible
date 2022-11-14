@@ -1,16 +1,9 @@
 
-
-
-# - name: Configure the Yum Repos 
-#   ansible.builtin.shell: curl --silent --location https://rpm.nodesource.com/setup_16.x | sudo bash -
-
-# - name: Install NodeJS 
+# - name: Install Maven 
 #   ansible.builtin.yum:
 #     name: "{{item}}"
 #     state: present  
-#   loop: 
-#     - nodejs 
-#     - gcc-c++  
+
 
 # - name: Creating roboshop user account 
 #   ansible.builtin.include_role:
