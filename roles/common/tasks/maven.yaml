@@ -27,7 +27,7 @@
   become_user: roboshop 
 
 - name: Creating a package 
-  ansible.builtin.shell:  mvn clean package 
+  ansible.builtin.shell:  mvn clean package && 
   register: DEFAULT_ROOT_PASSWORD
 
 
