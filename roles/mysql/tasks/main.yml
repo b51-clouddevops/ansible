@@ -27,19 +27,18 @@
 - name: Password Reset Block 
   when: stat.failed 
   block: 
+    - name: Fetch MySQL Default Password
+      ansible.builtin.shell: grep 'temporary password' /var/log/mysqld.log | awk '{print $NF}'
+      register: DEFAULT_ROOT_PASSWORD   
 
-- name: Fetch MySQL Default Password
-  ansible.builtin.shell: grep 'temporary password' /var/log/mysqld.log | awk '{print $NF}'
-  register: DEFAULT_ROOT_PASSWORD   
+    - name: Copy MySQL Password Reset File 
+      ansible.builtin.copy:
+        src: root_password.sql
+        dest: /tmp/root_password.sql
 
-- name: Copy MySQL Password Reset File 
-  ansible.builtin.copy:
-    src: root_password.sql
-    dest: /tmp/root_password.sql
-
-- name: Reset MySQL Default Password
-  ansible.builtin.shell:  mysql  --connect-expired-password  -uroot -p"{{DEFAULT_ROOT_PASSWORD.stdout}}"  < /tmp/root_password.sql
-  register: DEFAULT_ROOT_PASSWORD
+    - name: Reset MySQL Default Password
+      ansible.builtin.shell:  mysql  --connect-expired-password  -uroot -p"{{DEFAULT_ROOT_PASSWORD.stdout}}"  < /tmp/root_password.sql
+      register: DEFAULT_ROOT_PASSWORD
  
 
 
