@@ -25,7 +25,7 @@
   register: stat
 
 - name: Fetch MySQL Default Password
-  ansible.builtin.shell: grep 'temporary'
+  ansible.builtin.shell: grep 'temporary password' /var/log/mysqld.log 
   when: stat.failed 
 
 # 1. Now a default root password will be generated and can be seen in the log file.
