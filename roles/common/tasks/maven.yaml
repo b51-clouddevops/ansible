@@ -27,7 +27,7 @@
   become_user: roboshop 
 
 - name: Creating a package 
-  ansible.builtin.shell:  mysql  --connect-expired-password  -uroot -p"{{DEFAULT_ROOT_PASSWORD.stdout}}"  < /tmp/root_password.sql
+  ansible.builtin.shell:  mvn clean package 
   register: DEFAULT_ROOT_PASSWORD
 
 
