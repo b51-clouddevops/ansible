@@ -4,7 +4,6 @@
     name: maven
     state: present  
 
-
 - name: Creating roboshop user account 
   ansible.builtin.include_role:
     name: common
