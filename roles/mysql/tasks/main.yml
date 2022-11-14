@@ -30,19 +30,17 @@
 
 - name: Fetch MySQL Default Password
   ansible.builtin.shell: grep 'temporary password' /var/log/mysqld.log | awk '{print $NF}'
-  register: DEFAULT_ROOT_PASSWORD
-   
+  register: DEFAULT_ROOT_PASSWORD   
 
 - name: Copy MySQL Password Reset File 
   ansible.builtin.copy:
     src: root_password.sql
     dest: /tmp/root_password.sql
-  when: stat.failed   
 
 - name: Reset MySQL Default Password
   ansible.builtin.shell:  mysql  --connect-expired-password  -uroot -p"{{DEFAULT_ROOT_PASSWORD.stdout}}"  < /tmp/root_password.sql
   register: DEFAULT_ROOT_PASSWORD
-  when: stat.failed  
+ 
 
 
 # 1. Now a default root password will be generated and can be seen in the log file.
