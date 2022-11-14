@@ -25,7 +25,7 @@
     remote_src: yes
   become_user: roboshop 
 
-- name: Creating a package 
+- name: Creating artifact
   ansible.builtin.shell:  mvn clean package && mv target/{{COMPONENT}}-1.0.jar {{COMPONENT}}.jar
   args:
     chdir: /home/roboshop/{{COMPONENT}} 
