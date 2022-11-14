@@ -24,7 +24,8 @@
   ignore_errors: yes 
   register: stat
 
-- name: 
+- name: Password Reset Block 
+  block: 
 
 - name: Fetch MySQL Default Password
   ansible.builtin.shell: grep 'temporary password' /var/log/mysqld.log | awk '{print $NF}'
