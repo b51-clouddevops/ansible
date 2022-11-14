@@ -4,6 +4,7 @@
 - name: Installing RabbitMQ and Dependencies
   ansible.builtin.yum:
     name: 
+      - https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.sh
       - https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh 
       - rabbitmq-server
     state: installed 
