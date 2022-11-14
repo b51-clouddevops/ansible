@@ -14,10 +14,10 @@
     name: common
     tasks_from: download 
 
-# - name: Deleting Old Content
-#   ansible.builtin.file:
-#     path: /home/roboshop/{{COMPONENT}}
-#     state: absent  
+- name: Deleting Old Content
+  ansible.builtin.file:
+    path: /home/roboshop/{{COMPONENT}}
+    state: absent  
 
 # - name: Copy file to destination 
 #   ansible.builtin.copy:
