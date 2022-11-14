@@ -24,7 +24,14 @@
   ignore_errors: yes 
   register: stat
 
-- name: Fetch default mysql password
+- name: reset the passsword
+  debug:
+    msg: "{{stat}}"
+
+- name: This is some xyz task
+  debug:
+    msg: I am an xyz task
+  when: stat.failed 
 
 # 1. Now a default root password will be generated and can be seen in the log file.
 
