@@ -69,12 +69,7 @@
     login_user: root 
     login_password: RoboShop@1
 
-# So we need to load that schema into the database, So those applications will detect them and run accordingly.
-
-# To download schema, Use the following command
-
-# ```bash
-# # curl -s -L -o /tmp/mysql.zip "https://github.com/stans-robot-project/mysql/archive/main.zip"
-# ```
-
-# Load the schema for mysql. This file contains the list of COUNTRIES, CITIES and their PINCODES. This will be helpful in doing the shipping charges calculation which is based on the distance the product is shippied 
+- name: Doing set-hostname 
+  ansible.builtin.include_role:
+    name: common
+    tasks_from: set-hostname
