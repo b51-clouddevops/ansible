@@ -45,7 +45,7 @@
   register: PLUGIN_INFO  
   ignore_errors: yes 
 
-- name: Printing the output 
+- name: Uninstall 
   debug:
     msg: "{{PLUGIN_INFO}}"
 
