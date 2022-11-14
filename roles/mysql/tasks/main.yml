@@ -31,7 +31,7 @@
 
 - name: Copy MySQL Password Reset File 
   ansible.builtin.copy:
-    src: mysql.repo  
+    src: root_password.sql
     dest: /etc/yum.repos.d/mysql.repo 
 
 # 1. Now a default root password will be generated and can be seen in the log file.
