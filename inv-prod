@@ -20,10 +20,10 @@ cart-prod.robot.internal
 shipping-prod.robot.internal 
 
 [mysql]
-mysql.robot.internal 
+mysql-prod.robot.internal 
 
 [rabbitmq]
-rabbitmq.robot.internal 
+rabbitmq-prod.robot.internal 
 
 [payment]
-payment.robot.internal 
+payment-prod.robot.internal 

@@ -1,8 +1,8 @@
 [frontend]
-frontend.robot.internal 
+frontend-dev.robot.internal 
 
 [catalogue]
-catalogue.robot.internal 
+catalogue-dev.robot.internal 
 
 [mongodb]
 mongodb.robot.internal 
