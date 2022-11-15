@@ -38,7 +38,7 @@
   ansible.builtin.lineinfile:
     path:  /home/roboshop/{{COMPONENT}}/{{COMPONENT}}.ini
     regexp: '^uid'
-    line: SELINUX=enforcing
+    line: uid = {{APP_USER_INFO.}}
 
 
 
