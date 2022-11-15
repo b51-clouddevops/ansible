@@ -37,7 +37,7 @@
 - name: Updating the User ID 
   ansible.builtin.lineinfile:
     path:  /home/roboshop/{{COMPONENT}}/{{COMPONENT}}.ini
-    regexp: '^uid='
+    regexp: '^uid'
     line: SELINUX=enforcing
 
 
