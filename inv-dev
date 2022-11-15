@@ -5,25 +5,25 @@ frontend-dev.robot.internal
 catalogue-dev.robot.internal 
 
 [mongodb]
-mongodb.robot.internal 
+mongodb-dev.robot.internal 
 
 [redis]
-redis.robot.internal 
+redis-dev.robot.internal 
 
 [user]
-user.robot.internal 
+user-dev.robot.internal 
 
 [cart]
-cart.robot.internal 
+cart-dev.robot.internal 
 
 [shipping]
-shipping.robot.internal 
+shipping-dev.robot.internal 
 
 [mysql]
-mysql.robot.internal 
+mysql-dev.robot.internal 
 
 [rabbitmq]
-rabbitmq.robot.internal 
+rabbitmq-dev.robot.internal 
 
 [payment]
-payment.robot.internal 
+payment-dev.robot.internal 
