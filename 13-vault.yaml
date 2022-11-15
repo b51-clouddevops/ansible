@@ -1,6 +1,8 @@
 - name: Demo on ansible vault 
   hosts: localhost 
+  vars:
+    PASS:
   tasks:
       - name: Printing DB Password
         ansible.builtin.debug:
-              msg: PASSWORD = abc123321
+              msg: PASSWORD = {{PASS}}
