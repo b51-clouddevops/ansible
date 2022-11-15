@@ -1,4 +1,4 @@
-[frontend-prod]
+[frontend]
 frontend-prod.robot.internal 
 
 [catalogue-prod]
