@@ -1,0 +1,6 @@
+- name: Demo on ansible vault 
+  hosts: all 
+  tasks:
+      - name: Print Hello from task1 of play1 
+        ansible.builtin.debug:
+              msg: Hai from task1 of play1 
