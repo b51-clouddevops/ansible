@@ -31,8 +31,8 @@
 
 - name: Installing dependencies
   ansible.builtin.pip:
-    requirements: /home/roboshop/{{COMPONENT}}/
-    virtualenv: /my_app/venv
+    requirements: /home/roboshop/{{COMPONENT}}/requirements.txt
+
 
 - name: Configuring the service 
   ansible.builtin.include_role:
