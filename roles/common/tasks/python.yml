@@ -29,9 +29,10 @@
     remote_src: yes
   become_user: roboshop 
 
-- name: Installing node.js packages
-  community.general.npm:
-    path: /home/roboshop/{{COMPONENT}} 
+- name: Installing dependencies
+  ansible.builtin.pip:
+    requirements: /my_app/requirements.txt
+    virtualenv: /my_app/venv
 
 - name: Configuring the service 
   ansible.builtin.include_role:
