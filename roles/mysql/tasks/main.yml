@@ -33,7 +33,7 @@
 
     - name: Copy MySQL Password Reset File 
       ansible.builtin.copy:
-        src: root_password.sql
+        src: root_password.mysql
         dest: /tmp/root_password.mysql
 
     - name: Reset MySQL Default Password
