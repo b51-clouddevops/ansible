@@ -3,4 +3,4 @@
   tasks:
       - name: Print
         ansible.builtin.debug:
-              msg: Hai from task1 of play1 
+              msg: PASSWORD =  abc123321
