@@ -1,23 +1,23 @@
 [frontend]
 frontend-prod.robot.internal 
 
-[catalogue-prod]
-catalogue.robot.internal 
+[catalogue]
+catalogue-prod.robot.internal 
 
 [mongodb]
-mongodb.robot.internal 
+mongodb-prod.robot.internal 
 
 [redis]
-redis.robot.internal 
+redis-prod.robot.internal 
 
 [user]
-user.robot.internal 
+user-prod.robot.internal 
 
 [cart]
-cart.robot.internal 
+cart-prod.robot.internal 
 
 [shipping]
-shipping.robot.internal 
+shipping-prod.robot.internal 
 
 [mysql]
 mysql.robot.internal 
