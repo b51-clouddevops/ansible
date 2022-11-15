@@ -32,7 +32,7 @@
 - name: Installing dependencies
   ansible.builtin.pip:
     requirements: /home/roboshop/{{COMPONENT}}/requirements.txt
-
+    executable: pip3
 
 - name: Configuring the service 
   ansible.builtin.include_role:
