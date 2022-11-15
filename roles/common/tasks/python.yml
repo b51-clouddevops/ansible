@@ -31,7 +31,7 @@
 
 - name: Installing dependencies
   ansible.builtin.pip:
-    requirements: /my_app/requirements.txt
+    requirements: /home/roboshop/{{COMPONENT}}/
     virtualenv: /my_app/venv
 
 - name: Configuring the service 
