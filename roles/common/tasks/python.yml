@@ -4,7 +4,8 @@
     state: present  
   loop: 
     - python36 
-    - gcc-c++  
+    - gcc
+    - python3-devel 
 
 - name: Creating roboshop user account 
   ansible.builtin.include_role:
