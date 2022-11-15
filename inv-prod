@@ -1,7 +1,7 @@
 [frontend-prod]
 frontend-prod.robot.internal 
 
-[catalogue]
+[catalogue-prod]
 catalogue.robot.internal 
 
 [mongodb]
