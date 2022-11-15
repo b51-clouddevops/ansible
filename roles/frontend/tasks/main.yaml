@@ -18,7 +18,6 @@
      src: /tmp/frontend-main/static/
      dest: /usr/share/nginx/html/  
      remote_src: yes  # Source is remote machine as download of the file happened on the remote server.
-  notify: Restarting Nginx
 
 - name: Copying Roboshop Configuration  
   ansible.builtin.copy:
