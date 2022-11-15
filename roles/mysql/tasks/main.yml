@@ -34,10 +34,10 @@
     - name: Copy MySQL Password Reset File 
       ansible.builtin.copy:
         src: root_password.sql
-        dest: /tmp/root_password.sql
+        dest: /tmp/root_password.mysql
 
     - name: Reset MySQL Default Password
-      ansible.builtin.shell:  mysql  --connect-expired-password  -uroot -p"{{DEFAULT_ROOT_PASSWORD.stdout}}"  < /tmp/root_password.sql
+      ansible.builtin.shell:  mysql  --connect-expired-password  -uroot -p"{{DEFAULT_ROOT_PASSWORD.stdout}}"  < /tmp/root_password.mysql
       register: DEFAULT_ROOT_PASSWORD
  
 - name: Checking Password validate Plugin 
