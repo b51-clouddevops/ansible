@@ -5,9 +5,9 @@ Description=Payment Service
 User=root
 WorkingDirectory=/home/roboshop/payment
 
-Environment=CART_HOST=cart.robot.internal
-Environment=USER_HOST=user.robot.internal
-Environment=AMQP_HOST=rabbitmq.robot.internal
+Environment=CART_HOST=cart-{{ENV}}.robot.internal
+Environment=USER_HOST=user-{{ENV}}.robot.internal
+Environment=AMQP_HOST=rabbitmq-{{ENV}}.robot.internal
 Environment=AMQP_USER=roboshop
 Environment=AMQP_PASS=roboshop123
 
