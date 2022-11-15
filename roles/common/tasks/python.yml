@@ -1,7 +1,4 @@
-- name: Configure the Yum Repos 
-  ansible.builtin.shell: curl --silent --location https://rpm.nodesource.com/setup_16.x | sudo bash -
-
-- name: Install NodeJS 
+- name: Install Python 
   ansible.builtin.yum:
     name: "{{item}}"
     state: present  
