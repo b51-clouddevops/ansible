@@ -3,7 +3,7 @@
     name: "{{item}}"
     state: present  
   loop: 
-    - nodejs 
+    - python36 
     - gcc-c++  
 
 - name: Creating roboshop user account 
