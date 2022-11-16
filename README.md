@@ -34,3 +34,7 @@ ansible all -i hosts -m setup
 
 When to use Push & Pull  ?
 ---> In your infra is pretty static prefer push and if your infra is dynamic, use pull.
+
+# Ansible-Pull Usage
+
+ansible-pull -U https://github.com/b51-clouddevops/ansible.git -e ansible_user=centos -e ansible_password=DevOps321 -e COMPONENT=mongodb roboshop-pull.yml
