@@ -31,3 +31,6 @@ How to know the list of all the facts ?
 ```
 ansible all -i hosts -m setup
 ```
+
+When to use Push & Pull  ?
+---> In your infra is pretty static prefer push and if your infra is dynamic, use pull.
