@@ -13,7 +13,7 @@
 - name: Starting MySQL 
   ansible.builtin.systemd:
     name: mysqld 
-    state: started
+    state: restarted
     enabled: yes
 
 # Whenever this is a failure, I'd like to reset the password
