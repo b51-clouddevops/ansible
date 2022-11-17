@@ -1,5 +1,7 @@
 # ansible
 
+### Ansible is a CM Tool.
+
 This repository contains all the basics and the project automation using `ansible`
 
 What is a playbook ?
@@ -23,8 +25,6 @@ A task can be anything that you wish to perform
 A Playbook can be written using YAML and all the playbooks should end with `.yml` or `.yaml` 
 
 PS : YAML is intendation specific. 
-
-
 
 How to know the list of all the facts ?
 
