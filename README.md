@@ -38,3 +38,5 @@ When to use Push & Pull  ?
 # Ansible-Pull Usage
 
 ansible-pull -U https://github.com/b51-clouddevops/ansible.git -e ansible_user=centos -e ansible_password=xxxxxx -e COMPONENT=mongodb roboshop-pull.yml
+
+# This a comment added by Manoj Verma to show the PR Review Procedure.
