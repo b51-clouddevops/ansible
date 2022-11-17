@@ -1,5 +1,7 @@
 # ansible
 
+### Ansible is a CM Tool.
+
 This repository contains all the basics and the project automation using `ansible`
 
 What is a playbook ?
@@ -24,8 +26,6 @@ A Playbook can be written using YAML and all the playbooks should end with `.yml
 
 PS : YAML is intendation specific. 
 
-
-
 How to know the list of all the facts ?
 
 ```
@@ -38,3 +38,5 @@ When to use Push & Pull  ?
 # Ansible-Pull Usage
 
 ansible-pull -U https://github.com/b51-clouddevops/ansible.git -e ansible_user=centos -e ansible_password=xxxxxx -e COMPONENT=mongodb roboshop-pull.yml
+
+# This a comment added by Manoj Verma to show the PR Review Procedure.
