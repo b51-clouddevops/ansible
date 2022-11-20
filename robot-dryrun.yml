@@ -47,7 +47,7 @@
       block:
         - name: Import a role
           import_role:
-            name: "{{role_name}}"
+            name: "{{COMPONENT}}"
       always:
         - name: Terminate instances that were previously launched
           delegate_to: 127.0.0.1
