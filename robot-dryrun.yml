@@ -30,7 +30,7 @@
     - name: Wait for SSH to come up
       delegate_to: "{{ item.public_ip }}"
       wait_for_connection:
-        delay: 50
+        delay: 60
         timeout: 90
       loop: "{{ ec2.instances }}"
       ignore_errors: yes
