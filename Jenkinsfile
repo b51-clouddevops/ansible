@@ -4,6 +4,6 @@ pipeline {
         SSH_CRED = credentials('SSH-CRED')
     }
     stages {
-        stage('Performing a')
+        stage('Performing a DRY-RUN Role')
     }
 }
