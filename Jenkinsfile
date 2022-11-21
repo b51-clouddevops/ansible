@@ -3,4 +3,7 @@ pipeline {
     environment {
         SSH_CRED = credentials('SSH-CRED')
     }
+    stages {
+        stage('')
+    }
 }
