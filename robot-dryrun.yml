@@ -1,4 +1,4 @@
-- name: Creating EC2 for DryRun
+#- name: Creating EC2 for DryRun
   hosts: localhost
   gather_facts: False
   vars:
