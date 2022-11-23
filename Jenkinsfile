@@ -1,13 +1,55 @@
 pipeline {
-    agent any 
+    agent any
+    options {
+        ansiColor('xterm')
+    }
     environment {
         SSH_CRED = credentials('SSH-CRED')
     }
+    tools {
+            maven 'maven-3.5.0' 
+        }
     stages {
-        stage('Performing a DRY-RUN Role Validation'){
+        stage('Performing Lint Checks') {
             steps {
-                sh "ansible-playbook robot-dryrun.yml -e COMPONENT=mongodb -e ENV=dev -e ansible_user=centos -e ansible_password=DevOps321"
+                sh "env"
+                sh "This stage should only run against the feature branch only"
+                sh "echo LINT CHECKS COMPLETED"
             }
         }
+        
+        stage('Performing Ansible Dryrun') {
+                steps {
+                   sh "This stage should run only from the PR"
+                   sh "ansible-playbook robot-dryrun.yml -e COMPONENT=mongodb -e ENV=dev -e ansible_user=${SSH_CRED_USR} -e ansible_password=${SSH_CRED_PSW}"
+                }
+            }
+
+        stage('Performing Merge') {
+            steps {
+                 sh "This stage should run only from the main branch"
+                sh "echo Performing Merge"
+                sh "echo Doing Deployment"
+                }
+            }
+        }    
     }
-}
+
+
+
+
+
+
+
+
+
+
+// pipeline {
+//     /* Declarative Pipeline */
+// }
+
+
+
+// node {
+//     /* scripted pipeline */
+// }
