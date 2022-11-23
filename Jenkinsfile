@@ -21,7 +21,7 @@ pipeline {
         
         stage('Performing Ansible Dryrun') {
                 steps {
-                   sh "This stage should run only from the PR"
+                   sh "echo This stage should run only from the PR"
                    sh "ansible-playbook robot-dryrun.yml -e COMPONENT=mongodb -e ENV=dev -e ansible_user=${SSH_CRED_USR} -e ansible_password=${SSH_CRED_PSW}"
                 }
             }
@@ -29,7 +29,7 @@ pipeline {
         stage('Performing Merge to Main') {
             when { branch 'main' }
             steps {
-                    sh "This stage should run only from the main branch"
+                    sh "echo This stage should run only from the main branch"
                     sh "echo Performing Merge"
                     sh "echo Doing Deployment"
                 }
