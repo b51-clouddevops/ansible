@@ -37,24 +37,14 @@ pipeline {
                     sh "echo Doing Deployment"
                 }
             }
+
+        stage('Testing The Release') {
+            when { expression { TAG_NAME ==~ .* } }
+            steps {
+                    sh "env"
+                    sh "echo Running it against TAG $TAG_NAME"
+                }
+            }
         }    
     }
 
-
-
-
-
-
-
-
-
-
-// pipeline {
-//     /* Declarative Pipeline */
-// }
-
-
-
-// node {
-//     /* scripted pipeline */
-// }
