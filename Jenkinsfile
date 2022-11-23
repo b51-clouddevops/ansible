@@ -25,7 +25,7 @@ pipeline {
                 }
             }
 
-        stage('Performing Merge') {
+        stage('Performing Merge to Main') {
             steps {
                  sh "This stage should run only from the main branch"
                 sh "echo Performing Merge"
