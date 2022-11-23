@@ -14,7 +14,7 @@ pipeline {
             when { branch pattern: "feature.*", comparator: "REGEXP"}
             steps {
                 sh "env"
-                sh "This stage should only run against the feature branch only"
+                sh "echo This stage should only run against the feature branch only"
                 sh "echo LINT CHECKS COMPLETED"
             }
         }
