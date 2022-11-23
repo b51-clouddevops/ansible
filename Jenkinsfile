@@ -11,7 +11,7 @@ pipeline {
         }
     stages {
         stage('Performing Lint Checks') {
-            
+
             steps {
                 sh "env"
                 sh "This stage should only run against the feature branch only"
@@ -27,6 +27,7 @@ pipeline {
             }
 
         stage('Performing Merge to Main') {
+            when { branch 'main' }
             steps {
                  sh "This stage should run only from the main branch"
                 sh "echo Performing Merge"
