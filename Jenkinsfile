@@ -11,7 +11,7 @@ pipeline {
         }
     stages {
         stage('Performing Lint Checks') {
-            when { branch pattern: "feature*", comparator: "REGEXP"}
+            when { branch pattern: "feature.*", comparator: "REGEXP"}
             steps {
                 sh "env"
                 sh "This stage should only run against the feature branch only"
