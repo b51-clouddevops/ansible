@@ -28,16 +28,6 @@ pipeline {
                 }
             }
 
-        stage('Performing Merge to Main') {
-            when { branch 'main' }
-            steps {
-                    sh "env"
-                    sh "echo This stage should run only from the main branch"
-                    sh "echo Performing Merge"
-                    sh "echo Doing Deployment"
-                }
-            }
-
         stage('Testing The Release with tag') {
             when { expression { env.TAG_NAME != null } }
             steps {
