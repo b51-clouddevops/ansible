@@ -39,7 +39,7 @@ pipeline {
             }
 
         stage('Testing The Release with tag') {
-            when { expression { TAG_NAME ==~ .* } }
+            when { expression { TAG_NAME ==~ ".*" } }
             steps {
                     sh "env"
                     sh "echo Running it against TAG $TAG_NAME"
