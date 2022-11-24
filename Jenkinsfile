@@ -38,7 +38,7 @@ pipeline {
                 }
             }
 
-        stage('Testing The Release') {
+        stage('Testing The Release with tag') {
             when { expression { TAG_NAME ==~ .* } }
             steps {
                     sh "env"
