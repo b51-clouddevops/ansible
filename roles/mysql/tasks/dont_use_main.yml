@@ -1,0 +1,76 @@
+- name: Copy MySQL repo file 
+  ansible.builtin.copy:
+    src: mysql.repo  
+    dest: /etc/yum.repos.d/mysql.repo 
+
+- name: Installing MySQL
+  ansible.builtin.yum:
+    name: 
+      - mysql-community-server
+      - MySQL-python
+    state: installed 
+
+- name: Starting MySQL 
+  ansible.builtin.systemd:
+    name: mysqld 
+    state: restarted
+    enabled: yes
+
+# Whenever this is a failure, I'd like to reset the password
+- name: Get MySQL version with non-default credentials
+  community.mysql.mysql_info:
+    login_user: root 
+    login_password: RoboShop@1
+  ignore_errors: yes 
+  register: stat
+
+- name: Password Reset Block 
+  when: stat.failed 
+  block: 
+    - name: Fetch MySQL Default Password
+      ansible.builtin.shell: grep 'temporary password' /var/log/mysqld.log | awk '{print $NF}'
+      register: DEFAULT_ROOT_PASSWORD   
+
+    - name: Copy MySQL Password Reset File 
+      ansible.builtin.copy:
+        src: root_password.mysql
+        dest: /tmp/root_password.mysql
+
+    - name: Reset MySQL Default Password
+      ansible.builtin.shell:  mysql  --connect-expired-password  -uroot -p"{{DEFAULT_ROOT_PASSWORD.stdout}}"  < /tmp/root_password.mysql
+      register: DEFAULT_ROOT_PASSWORD
+ 
+- name: Checking Password validate Plugin 
+  ansible.builtin.shell: echo show plugins; | mysql -uroot -pRoboShop@1  | grep validate_password
+  register: PLUGIN_INFO  
+  ignore_errors: yes 
+
+- name: Uninstall password validate plugin 
+  when: PLUGIN_INFO.rc == 0
+  block:
+     - name: Copying the password validate command 
+       ansible.builtin.copy:
+        src: password_validate.mysql  
+        dest: /tmp/password_validate.mysql
+     
+     - name: Uninstall password validate plugin 
+       ansible.builtin.shell: echo "uninstall plugin validate_password;" |  mysql -uroot -pRoboShop@1  
+       ignore_errors: yes
+
+- name: Download and extracting MySQL 
+  ansible.builtin.include_role:
+    name: common
+    tasks_from: download
+
+- name: Load Schema 
+  community.mysql.mysql_db:
+    state: import
+    name: all
+    target: /tmp/mysql-main/shipping.sql
+    login_user: root 
+    login_password: RoboShop@1
+
+- name: Doing set-hostname 
+  ansible.builtin.include_role:
+    name: common
+    tasks_from: set-hostname
