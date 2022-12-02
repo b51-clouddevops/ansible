@@ -26,7 +26,7 @@
     - name: Fetch MySQL version to check the DB Connection
       mysql_info:
         login_user: root
-        login_password: "{{MYSQL_PASSWORD}}"
+        login_password: "{{DB_PASSWORD}}"
         filter: version
   rescue:
     - name: Load MYSQL Log File
@@ -39,10 +39,10 @@
         DEFAULT_PASS: "{{mysql_log['content'] | b64decode | regex_findall('.*temporary password.*') | join(' ') |split(' ') | last }}"
 
     - name: Change MySQL
-      ansible.builtin.shell: echo "ALTER USER 'root'@'localhost' IDENTIFIED BY '{{MYSQL_PASSWORD}}';" | mysql --connect-expired-password -uroot -p"{{DEFAULT_PASS}}"
+      ansible.builtin.shell: echo "ALTER USER 'root'@'localhost' IDENTIFIED BY '{{DB_PASSWORD}}';" | mysql --connect-expired-password -uroot -p"{{DEFAULT_PASS}}"
 
 - name: Check Validate plugin exists
-  ansible.builtin.shell: echo "uninstall plugin validate_password;" | mysql -uroot -p{{MYSQL_PASSWORD}}
+  ansible.builtin.shell: echo "uninstall plugin validate_password;" | mysql -uroot -p{{DB_PASSWORD}}
   ignore_errors: yes
 
 - name: Download and extracting MySQL 
@@ -56,7 +56,7 @@
     name: all
     target: /tmp/mysql-main/shipping.sql
     login_user: root
-    login_password: "{{MYSQL_PASSWORD}}"
+    login_password: "{{DB_PASSWORD}}"
 
 
 
