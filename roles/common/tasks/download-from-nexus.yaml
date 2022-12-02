@@ -18,4 +18,3 @@
     remote_src: yes  # If the source is not local , you need to mention remote soruce as yes. 
   become_user: "{{APPUSER}}"
 
-APP_LOCATION: "/home/{{APPUSER}}/{{COMPONENT}}/"
