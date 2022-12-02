@@ -8,7 +8,6 @@
   ansible.builtin.file:
     path: /home/roboshop/{{COMPONENT}}/
     state: directory
-    mode: '0755'
   become_user: roboshop
   ignore_errors: yes
 
