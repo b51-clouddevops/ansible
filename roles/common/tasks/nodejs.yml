@@ -20,7 +20,7 @@
     name: common
     tasks_from: download-from-nexus 
 
-# Uncomment it when you want to donwload from github *****
+# **** Uncomment it when you want to donwload from github *****
 # - name: Download and extracting frontend 
 #   ansible.builtin.include_role:
 #     name: common
