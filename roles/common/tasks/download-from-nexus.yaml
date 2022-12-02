@@ -9,6 +9,8 @@
     path: /home/roboshop/{{COMPONENT}}/
     state: directory
     mode: '0755'
+  beco
+  ignore_errors: yes
 
 
 - name: Download and extraing {{COMPONENT}} 
