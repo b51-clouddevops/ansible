@@ -16,5 +16,3 @@
     src: http://172.31.2.247:8081/repository/{{COMPONENT}}/{{COMPONENT}}-{{APP_VERSION}}.zip
     dest: /home/roboshop/{{COMPONENT}}/ 
     remote_src: yes  # If the source is not local , you need to mention remote soruce as yes. 
-
-
