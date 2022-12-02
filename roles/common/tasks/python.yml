@@ -12,7 +12,14 @@
     name: common
     tasks_from: create-user 
 
-# - name: Download and extracting frontend 
+- name: Download and extracting component 
+  ansible.builtin.include_role:
+    name: common
+    tasks_from: download-from-nexus
+
+# **** Uncomment it when you want to donwload from github *****
+
+# - name: Download and extracting component 
 #   ansible.builtin.include_role:
 #     name: common
 #     tasks_from: download 
