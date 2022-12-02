@@ -9,7 +9,7 @@
     path: /home/roboshop/{{COMPONENT}}/
     state: directory
     mode: '0755'
-  beco
+  become_user: roboshop
   ignore_errors: yes
 
 
