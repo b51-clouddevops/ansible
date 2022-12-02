@@ -11,7 +11,6 @@
   become_user: roboshop
   ignore_errors: yes
 
-
 - name: Download and extraing {{COMPONENT}} 
   ansible.builtin.unarchive:
     src: http://172.31.2.247:8081/repository/{{COMPONENT}}/{{COMPONENT}}-{{APP_VERSION}}.zip
