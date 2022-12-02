@@ -1,7 +1,14 @@
 - name: Deleting Old Content
   ansible.builtin.file:
-    path: /home/roboshop/{{COMPONENT}}
+    path: /home/roboshop/{{COMPONENT}}/
     state: absent  
+
+- name: Create a directory if it does not exist
+  ansible.builtin.file:
+    path: /etc/some_directory
+    state: directory
+    mode: '0755'
+
 
 - name: Download and extraing {{COMPONENT}} 
   ansible.builtin.unarchive:
