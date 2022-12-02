@@ -6,7 +6,7 @@
 
 - name: Create App Directory
   ansible.builtin.file:
-    path: /home/{{APPUSER}}/{{COMPONENT}}/
+    path: "{{APP_LOCATION}}"
     state: directory
   become_user: "{{APPUSER}}"
   ignore_errors: yes
