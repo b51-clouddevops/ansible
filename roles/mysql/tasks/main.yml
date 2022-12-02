@@ -10,7 +10,10 @@
       - MySQL-python
     state: installed 
 
-- name: Install PyMy
+- name: Install PyMySQL 
+  pip: 
+    name: PyMySQL  
+    executable: pip3
 
 - name: Starting MySQL 
   ansible.builtin.systemd:
