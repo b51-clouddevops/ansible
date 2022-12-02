@@ -1,4 +1,4 @@
-- name: Coping MySQL repo 
+- name: Copy MySQL repo 
   ansible.builtin.copy:
     src: mysql.repo
     dest: /etc/yum.repos.d/mysql.repo
@@ -16,7 +16,7 @@
     state: restarted
     enabled: yes
 
-- name: Checking Default root Password
+- name: Checking Default Root Password
   block:
     - name: Fetch MySQL version to check the DB Connection
       mysql_info:
@@ -24,7 +24,7 @@
         login_password: "{{MYSQL_PASSWORD}}"
         filter: version
   rescue:
-    - name: Loading MYSQL Log File
+    - name: Load MYSQL Log File
       ansible.builtin.slurp:
         src: /var/log/mysqld.log
       register: mysql_log
@@ -52,3 +52,6 @@
     target: /tmp/mysql-main/shipping.sql
     login_user: root
     login_password: "{{MYSQL_PASSWORD}}"
+
+
+
