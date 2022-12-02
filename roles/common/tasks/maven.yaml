@@ -13,6 +13,24 @@
     name: common
     tasks_from: download-from-nexus
 
+# **** Uncomment it when you want to donwload from github *****
+# - name: Download and extracting frontend 
+#   ansible.builtin.include_role:
+#     name: common
+#     tasks_from: download
+
+# - name: Deleting Old Content
+#   ansible.builtin.file:
+#     path: /home/roboshop/{{COMPONENT}}
+#     state: absent  
+
+# - name: Copy file to destination 
+#   ansible.builtin.copy:
+#     src:  /tmp/{{COMPONENT}}-main/
+#     dest: /home/roboshop/{{COMPONENT}}/
+#     remote_src: yes
+#   become_user: roboshop 
+
 - name: Creating artifact
   ansible.builtin.shell:  mvn clean package && mv target/{{COMPONENT}}-1.0.jar {{COMPONENT}}.jar
   args:
