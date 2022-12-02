@@ -1,14 +1,14 @@
 - name: Deleting Old Content
   ansible.builtin.file:
-    path: /home/roboshop/{{COMPONENT}}/
+    path: /home/{{APPUSER}}/{{COMPONENT}}/
     state: absent  
   ignore_errors: yes
 
 - name: Create App Directory
   ansible.builtin.file:
-    path: /home/roboshop/{{COMPONENT}}/
+    path: /home/{{APPUSER}}/{{COMPONENT}}/
     state: directory
-  become_user: roboshop
+  become_user: "{{{{APPUSER}}}}"
   ignore_errors: yes
 
 - name: Download and extraing {{COMPONENT}} 
