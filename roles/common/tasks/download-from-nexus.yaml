@@ -3,3 +3,15 @@
     src: http://172.31.2.247:8081/repository/{{COMPONENT}}/{{COMPONENT}}-{{APP_VERSION}}.zip
     dest: /tmp 
     remote_src: yes  # If the source is not local , you need to mention remote soruce as yes. 
+
+- name: Deleting Old Content
+  ansible.builtin.file:
+    path: /home/roboshop/{{COMPONENT}}
+    state: absent  
+
+- name: Copy file to destination 
+  ansible.builtin.copy:
+    src:  /tmp/{{COMPONENT}}-main/
+    dest: /home/roboshop/{{COMPONENT}}/
+    remote_src: yes
+  become_user: roboshop 
