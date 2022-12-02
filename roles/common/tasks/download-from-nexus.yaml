@@ -2,10 +2,11 @@
   ansible.builtin.file:
     path: /home/roboshop/{{COMPONENT}}/
     state: absent  
+  ignore_errors: yes
 
-- name: Create a directory if it does not exist
+- name: Create App Directory
   ansible.builtin.file:
-    path: /etc/some_directory
+    path: /home/roboshop/{{COMPONENT}}/
     state: directory
     mode: '0755'
 
