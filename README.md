@@ -42,4 +42,6 @@ ansible-pull -U https://github.com/b51-clouddevops/ansible.git -e ansible_user=c
 ### with version :
 ansible-pull -U https://github.com/b51-clouddevops/ansible.git -e ansible_user=centos -e ansible_password=xxxxxxxx -e COMPONENT=catalogue -e APP_VERSION=0.0.2 -e ENV=dev roboshop-pull.yml
 
+ansible-pull -U https://github.com/b51-clouddevops/ansible.git -e ansible_user=centos -e ansible_password=DevOps321 -e DB_PASSWORD=RoboShop@1 -e COMPONENT=payment -e APP_VERSION=0.0.2 -e ENV=dev roboshop-pull.yml
+
 # This a comment added by Manoj Verma to show the PR Review Procedure.
