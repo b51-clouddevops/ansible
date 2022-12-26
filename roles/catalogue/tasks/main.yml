@@ -1,3 +1,6 @@
+- name: Fetching Secret from AWS Secret Manager 
+  debug: msg="{{ lookup('amazon.aws.aws_secret', '/path/to/secrets', bypath=true) }}"
+
 - name: Configuring NodeJS Component 
   ansible.builtin.include_role:
     name: common
