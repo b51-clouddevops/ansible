@@ -15,7 +15,13 @@
     name: common
     tasks_from: create-user 
 
-- name: Downloading the per key 
+- name: Downloading the pem key
+  ansible.builtin.get_url:
+    url: http://example.com/path/file.conf
+    dest: /etc/foo.conf
+    username: bar
+    password: '{{ mysecret }}'
+Return Values 
 
 - name: Download and extracting frontend 
   ansible.builtin.include_role:
