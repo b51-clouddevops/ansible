@@ -17,11 +17,11 @@
 
 - name: Downloading the pem key
   ansible.builtin.get_url:
-    url: http://example.com/path/file.conf
-    dest: /etc/foo.conf
-    username: bar
-    password: '{{ mysecret }}'
-Return Values 
+    url: https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem
+    dest: /home/roboshop/
+    mode: '0440'
+    owner:
+
 
 - name: Download and extracting frontend 
   ansible.builtin.include_role:
