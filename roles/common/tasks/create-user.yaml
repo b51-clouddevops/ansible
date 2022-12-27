@@ -4,7 +4,10 @@
     comment: roboshop project application user 
   register: APP_USER_INFO
 
-- name: Prinint the app user info 
-  debug:
-    msg: "{{APP_USER_INFO}}"
+- name: Installing boto3 and botocore needed for aws secret lookup 
+  ansible.builtin.pip:
+    name: 
+      - botocore
+      - boto3   
+    executable: pip3.3
 
