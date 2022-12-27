@@ -9,5 +9,3 @@ SyslogIdentifier=catalogue
 
 [Install]
 WantedBy=multi-user.target 
-
-'mongodb://mongodb:27017/catalogue'
