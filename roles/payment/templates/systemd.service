@@ -8,8 +8,10 @@ WorkingDirectory=/home/roboshop/payment
 Environment=CART_HOST=cart-{{ENV}}.robot.internal
 Environment=USER_HOST=user-{{ENV}}.robot.internal
 Environment=AMQP_HOST=rabbitmq-{{ENV}}.robot.internal
-Environment=AMQP_USER=roboshop
-Environment=AMQP_PASS=roboshop123
+Environment=AMQP_USER={{SECRETS.RAMMITMQ_USERNAME}}
+Environment=AMQP_PASS={{SECRETS.RAMMITMQ_PASSWORD}}
+Environment=CART_PORT=80
+Environment=USER_PORT=80
 
 ExecStart=/usr/local/bin/uwsgi --ini payment.ini
 SyslogIdentifier=payment
