@@ -45,3 +45,9 @@ ansible-pull -U https://github.com/b51-clouddevops/ansible.git -e ansible_user=c
 ansible-pull -U https://github.com/b51-clouddevops/ansible.git -e ansible_user=centos -e ansible_password=DevOps321 -e DB_PASSWORD=yyyyyyyyy -e COMPONENT=payment -e APP_VERSION=0.0.3 -e ENV=dev roboshop-pull.yml
 
 # This a comment added by Manoj Verma to show the PR Review Procedure.
+
+$ To update the logstash configuration related changes :
+```
+ansible-pull -U https://github.com/b51-clouddevops/ansible.git  -e role_name=elk -e COMPONENT=elk roboshop-pull.yml
+
+```
