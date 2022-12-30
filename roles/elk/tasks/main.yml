@@ -9,3 +9,5 @@
     name: logstash  
     daemon_reload: yes
     state: restarted  
+
+# Logstash is a greedy component towards memory and takes times to restart. So, you need to ensure thhat only after the port comes up
