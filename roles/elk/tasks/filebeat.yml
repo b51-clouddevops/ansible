@@ -16,7 +16,7 @@
     dest: /etc/filebeat/filebeat.yml 
 
 - name: Starting Filebeat 
-  ansible.builtin.:
+  ansible.builtin.systemd:
     name: filebeat
     daemon_reload: yes
     state: restarted
