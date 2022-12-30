@@ -3,7 +3,7 @@ filebeat.inputs:
   enabled: true
 # Option valid only for catalogue, cart ,user components
 {% if LOGTYPE == "json" %}
-  {json.keys_under_root: true              
+  json.keys_under_root: true
 {% endif %}
   
   paths:
