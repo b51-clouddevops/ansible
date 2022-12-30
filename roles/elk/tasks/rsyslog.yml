@@ -1,0 +1,12 @@
+# This task configures rsyslog for all the backend components
+- name: Copying The rsyslog Config 
+  ansible.builtin.template:
+    src: rsyslog.conf 
+    dest: /etc/filebeat/filebeat.yml 
+
+- name: Starting Filebeat 
+  ansible.builtin.systemd:
+    state: filebeat
+    daemon_reload: yes
+    name: restarted  
+    enabled: yes
