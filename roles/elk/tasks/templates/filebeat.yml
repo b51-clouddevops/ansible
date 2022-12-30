@@ -11,7 +11,7 @@ filebeat.inputs:
 
 fields:
    appname: "{{COMPONENT}}"
-   review: 1
+  #  logtype: json 
 
 filebeat.config.modules:
   path: ${path.config}/modules.d/*.yml
