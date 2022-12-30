@@ -8,5 +8,4 @@
   ansible.builtin.systemd:
     state: rsyslog 
     daemon_reload: yes
-    name: restarted  
-    enabled: yes
+    state: restarted  
