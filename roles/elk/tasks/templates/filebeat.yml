@@ -1,18 +1,13 @@
 filebeat.inputs:
-
 - type: log
-
   enabled: true
-
   paths:
-    - /var/log/*.log
-
+    - "{{LOGLOCATION}}"
 
 filebeat.config.modules:
   path: ${path.config}/modules.d/*.yml
 
   reload.enabled: false
-
 
 setup.template.settings:
   index.number_of_shards: 1
