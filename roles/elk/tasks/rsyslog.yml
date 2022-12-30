@@ -6,6 +6,6 @@
 
 - name: restarting rsyslog 
   ansible.builtin.systemd:
-    state: rsyslog 
+    name: rsyslog 
     daemon_reload: yes
     state: restarted  
