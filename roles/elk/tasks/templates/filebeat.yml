@@ -1,25 +1,16 @@
-
-
 filebeat.inputs:
 
 - type: log
 
-  # Unique ID among all inputs, an ID is required.
-  id: my-filestream-id
+  enabled: true
 
-  # Change to true to enable this input configuration.
-  enabled: false
-
-  # Paths that should be crawled and fetched. Glob based paths.
   paths:
     - /var/log/*.log
 
 
 filebeat.config.modules:
-  # Glob pattern for configuration loading
   path: ${path.config}/modules.d/*.yml
 
-  # Set to true to enable config reloading
   reload.enabled: false
 
 
@@ -29,7 +20,6 @@ setup.template.settings:
 setup.kibana:
 
 output.logstash:
-  # The Logstash hosts
   hosts: ["172.31.5.135:5044"]
 
 processors:
