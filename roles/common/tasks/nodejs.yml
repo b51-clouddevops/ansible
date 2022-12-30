@@ -55,6 +55,16 @@
     name: common
     tasks_from: config-service 
 
+- name: Configuring the rsyslog 
+  ansible.builtin.include_role:
+    name: elk 
+    tasks_from: rsyslog  
+
+- name: Installing the rsyslog 
+  ansible.builtin.include_role:
+    name: elk 
+    tasks_from: rsyslog  
+
 - name: Doing set-hostname 
   ansible.builtin.include_role:
     name: common
