@@ -15,8 +15,6 @@ filebeat.inputs:
     - /var/log/*.log
 
 
-# ============================== Filebeat modules ==============================
-
 filebeat.config.modules:
   # Glob pattern for configuration loading
   path: ${path.config}/modules.d/*.yml
@@ -24,25 +22,12 @@ filebeat.config.modules:
   # Set to true to enable config reloading
   reload.enabled: false
 
-  # Period on which files under path should be checked for changes
-  #reload.period: 10s
-
-# ======================= Elasticsearch template setting =======================
 
 setup.template.settings:
   index.number_of_shards: 1
-  #index.codec: best_compression
-  #_source.enabled: false
 
-
-# =================================== Kibana ===================================
-
-# Starting with Beats version 6.0.0, the dashboards are loaded via the Kibana API.
-# This requires a Kibana endpoint configuration.
 setup.kibana:
 
-
-# ------------------------------ Logstash Output -------------------------------
 output.logstash:
   # The Logstash hosts
   hosts: ["172.31.5.135:5044"]
