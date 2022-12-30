@@ -2,3 +2,4 @@ COMPONENT: payment
 APPUSER: roboshop
 APP_LOCATION: /home/{{APPUSER}}/{{COMPONENT}}/
 LOGLOCATION: /var/log/{{COMPONENT}}.log
+LOGTYPE: raw 
