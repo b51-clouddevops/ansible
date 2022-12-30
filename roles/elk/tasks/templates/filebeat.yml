@@ -1,6 +1,7 @@
 filebeat.inputs:
 - type: log
   enabled: true
+  json.keys_under_root: true              # Option valid only for catalogue, cart ,user components
   paths:
     - "{{LOGLOCATION}}"
 
