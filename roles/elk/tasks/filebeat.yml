@@ -8,7 +8,14 @@
     name: filebeat 
     state: present
 
-- name: Copying Elastic Filebeat Repo 
+- name: Copying The Filebeat Config 
   ansible.builtin.template:
-    src: elastic.repo 
-    dest: /etc/yum.repos.d/elastic.repo 
+    src: filebeat.yml 
+    dest: /etc/filebeat/filebeat.yml 
+
+- name: Starting Filebeat 
+  ansible.builtin.systemd:
+    state: started
+    daemon_reload: yes
+    name: nginx 
+    enabled: yes
