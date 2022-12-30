@@ -1,11 +1,11 @@
 # This task Updated and restarts logstash config
-- name: Copying The logstash  Config 
+- name: Copying The logstash config 
   ansible.builtin.template:
     src: logstash.conf 
-    dest: /etc/rsyslog.d/roboshop.conf 
+    dest: /etc/logstash/conf.d/logstash.conf
 
-- name: restarting rsyslog 
+- name: restarting logstash 
   ansible.builtin.systemd:
-    name: rsyslog 
+    name: logstash  
     daemon_reload: yes
     state: restarted  
