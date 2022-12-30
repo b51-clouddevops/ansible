@@ -9,6 +9,10 @@ filebeat.inputs:
   paths:
     - "{{LOGLOCATION}}"
 
+fields:
+   appname: "{{COMPONENT}}"
+   review: 1
+
 filebeat.config.modules:
   path: ${path.config}/modules.d/*.yml
 
