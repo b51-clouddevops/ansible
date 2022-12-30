@@ -1,5 +1,4 @@
 # This task is going to install and configure filebeat on all the backend components
-
 - name: Copying Elastic Filebeat Repo 
   ansible.builtin.template:
     src: elastic.repo 
