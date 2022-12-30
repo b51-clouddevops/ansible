@@ -1,3 +1,4 @@
 COMPONENT: frontend
 APPUSER: roboshop
 APP_LOCATION: /usr/share/nginx/html
+LOGLOCATION: /var/log/nginx/access.log
