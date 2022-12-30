@@ -60,10 +60,10 @@
     name: elk 
     tasks_from: rsyslog  
 
-- name: Installing the rsyslog 
+- name: Installing the filebeat 
   ansible.builtin.include_role:
     name: elk 
-    tasks_from: rsyslog  
+    tasks_from: filebeat  
 
 - name: Doing set-hostname 
   ansible.builtin.include_role:
