@@ -11,8 +11,9 @@
 - name: Copy nginx config 
   ansible.builtin.template:
      src: nginx.conf 
-     dest: /usr/share/nginx/html/  
-
+     dest: /etc/nginx/nginx.conf 
+  notify: Restarting Nginx
+     
 - name: Cleanup of Old Web Content 
   ansible.builtin.file:
     path: /usr/share/nginx/html 
