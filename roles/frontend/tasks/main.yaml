@@ -8,6 +8,11 @@
     name: common
     tasks_from: download
 
+- name: Copy nginx config 
+  ansible.builtin.template:
+     src: nginx.conf 
+     dest: /usr/share/nginx/html/  
+
 - name: Cleanup of Old Web Content 
   ansible.builtin.file:
     path: /usr/share/nginx/html 
