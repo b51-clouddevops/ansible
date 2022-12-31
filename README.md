@@ -51,3 +51,8 @@ $ To update the logstash configuration related changes :
 ansible-pull -U https://github.com/b51-clouddevops/ansible.git  -e role_name=elk -e COMPONENT=elk roboshop-pull.yml
 
 ```
+
+
+# Website for changing unstructure to structured logs
+# Their Website name is Grok Debugger Heroku App ( Right not this is down )
+# Use this IP Address to access this website.
